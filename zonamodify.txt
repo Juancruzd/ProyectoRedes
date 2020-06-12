@@ -1,0 +1,126 @@
+R1
+------------------------------- 
+Router eigrp 20
+ network 10.10.0.0 0.0.0.255
+
+ network 192.168.0.0 0.0.0.7
+ network 192.168.0.8 0.0.0.7
+ network 192.168.0.16 0.0.0.7
+ network 192.168.0.24 0.0.0.7 
+ network 192.168.0.32 0.0.0.15
+ network 192.168.0.48 0.0.0.7
+ network 192.168.0.56 0.0.0.7
+ network 192.168.0.64 0.0.0.7
+ network 192.168.0.72 0.0.0.7
+ network 192.168.0.80 0.0.0.7 
+ no auto-summary
+ passive-interface fast0/0.100
+ passive-interface fast0/0.101
+ passive-interface fast0/0.102
+ passive-interface fast0/0.103
+ passive-interface fast0/0.104
+ passive-interface fast0/0.105
+ passive-interface fast0/0.106
+ passive-interface fast0/0.107
+ passive-interface fast0/0.108
+ passive-interface fast0/0.109 
+ 
+
+------------------------------- 
+R2
+ Router eigrp 20
+ network 10.10.0.0 0.0.0.255
+
+ network 182.168.0.0 0.0.0.127
+ network 182.168.0.128 0.0.0.127
+ network 182.168.1.0 0.0.0.127
+ network 182.168.1.128 0.0.0.127
+ network 182.168.2.0 0.0.0.127
+ network 182.168.2.128 0.0.0.127
+ network 182.168.3.0 0.0.0.127
+ network 182.168.3.128 0.0.0.127
+
+ network 182.168.4.0 0.0.0.7
+ network 182.168.4.8 0.0.0.7
+ network 182.168.4.16 0.0.0.7
+ network 182.168.4.24 0.0.0.7
+ network 182.168.4.32 0.0.0.7
+ network 182.168.4.40 0.0.0.7
+ network 182.168.4.48 0.0.0.7
+
+ network 182.168.4.64 0.0.0.7
+ network 182.168.4.72 0.0.0.7
+ network 182.168.4.80 0.0.0.7 
+ network 182.168.4.88 0.0.0.15
+
+ network 182.168.4.128 0.0.0.63  
+ network 182.168.4.192 0.0.0.63  
+ network 182.168.5.0 0.0.0.63 
+ network 182.168.5.64 0.0.0.63
+ network 182.168.5.128 0.0.0.63  
+ network 182.168.5.192 0.0.0.63  
+ network 182.168.6.0 0.0.0.63 
+ network 182.168.6.64 0.0.0.63 
+ network 182.168.6.128 0.0.0.63  
+ network 182.168.6.192 0.0.0.63  
+ network 182.168.7.0 0.0.0.63
+ network 182.168.7.64 0.0.0.63  
+ network 182.168.7.128 0.0.0.63  
+ network 182.168.7.192 0.0.0.63 
+ network 182.168.8.0 0.0.0.63
+ network 182.168.8.64 0.0.0.63 
+ network 182.168.8.128 0.0.0.63 
+ network 182.168.8.192 0.0.0.63  
+ network 182.168.9.0 0.0.0.63
+ network 182.168.9.64 0.0.0.63 
+ network 182.168.9.128 0.0.0.63  
+ network 182.168.9.192 0.0.0.63 
+ network 182.168.10.0 0.0.0.63 
+ network 182.168.10.64 0.0.0.63
+ network 182.168.10.128 0.0.0.63  
+ no auto-summary
+ passive-interface fast0/0.200
+ passive-interface fast0/0.201
+ passive-interface fast0/0.202
+ passive-interface fast0/0.203
+ passive-interface fast0/0.204
+ passive-interface fast0/0.205
+ passive-interface fast0/0.206
+ passive-interface fast0/0.207
+ passive-interface fast0/0.208
+ passive-interface fast0/0.210
+ passive-interface fast0/0.211
+ passive-interface fast0/0.212
+ passive-interface fast0/0.213
+ passive-interface fast0/0.214
+ passive-interface fast0/0.215
+ passive-interface fast0/0.216
+ passive-interface fast0/0.217
+ passive-interface fast0/0.218
+ passive-interface fast0/0.219
+ passive-interface fast0/0.220
+ passive-interface fast0/0.221
+ passive-interface fast0/0.222
+ passive-interface fast0/0.223
+ passive-interface fast0/0.224
+ passive-interface fast0/0.225
+ passive-interface fast0/0.226
+ passive-interface fast0/0.227
+ passive-interface fast0/0.228
+ passive-interface fast0/0.229
+ passive-interface fast0/0.230
+ passive-interface fast0/0.231
+ passive-interface fast0/0.232
+ passive-interface fast0/0.233
+ passive-interface fast0/0.234
+ passive-interface fast0/0.235
+ passive-interface fast0/0.236
+ passive-interface fast0/0.237
+ passive-interface fast0/0.238
+ passive-interface fast0/0.239
+ passive-interface fast0/0.240
+ passive-interface fast0/0.241
+ passive-interface fast0/0.242
+ passive-interface fast0/0.243
+
+------------------------------- 

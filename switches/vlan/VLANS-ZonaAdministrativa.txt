@@ -1,0 +1,72 @@
+-----------VLAN ZONA ADMINISTRATIVA-----------
+-----------ÁREA ADMINISTRATIVA-----------
+
+--------VLAN OFICINA DE GERENCIA--------
+vlan 100
+name vlan_za_aa_oficina_de_gerencia
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 100
+
+--------VLAN CONTABILIDAD--------
+vlan 101
+name vlan_za_aa_contabilidad
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 101
+
+--------VLAN MARKETING--------
+vlan 102
+name vlan_za_aa_marketing
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 102
+
+--------VLAN SECRETARIA--------
+vlan 103
+name vlan_za_aa_secretaria
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 103
+
+--------VLAN SALA DE JUNTAS--------
+vlan 105
+name vlan_za_aa_sala_de_juntas
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 105
+
+
+--------VLAN ESTAR ESPERA--------
+vlan 106
+name vlan_za_aa_estar_espera
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 106
+
+--------VLAN CUARTO DE SEGURIDAD--------
+vlan 107
+name vlan_za_aa_cuarto_de_seguridad
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 107
+
+
+
+
+
+-----------DEPARTAMENTO DE INFRAESTRUCTURA-----------
+
+--------VLAN DEPARTAMENTO DE REDES--------
+vlan 108
+name vlan_za_ddi_departamento_de_redes
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 108
+
+--------VLAN DEPARTAMENTO DE SERVIDORES--------
+vlan 109
+name vlan_za_ddi_departamento_de_servidores
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 109

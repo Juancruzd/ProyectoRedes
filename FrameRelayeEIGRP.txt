@@ -1,0 +1,120 @@
+netAddress	HostAddressRange		BroadcastAddress	mask
+10.10.0.0	10.10.0.1 - 10.10.0.254		10.10.0.255		255.255.255.0/24
+
+Por que elegimos EIGRP, A diferencia del ripv2 que envia cada 30 segundos un broadcast a los router ubicados en el puerto 520 
+pidiendo una copia de la tabla de enrutamiento y los router devuelven una copia de su tabla de enrutamiento 
+y cuando rip recibe una respuesta el  mensajes se valida y se actualiza en su tabla de enrutamiento, eigrp solo esstablece adyacencias 
+con los router cada que se realiza un cambio enviando un paquete de saludo (Hello) a otros enrutadores en resumen si envia un router un paquete a 
+otro router que lo reciba ellos seran vecinos y empezar a intercambiar información de enrutamiento que guardaran en su tabla de topologia y solo se activara 
+cada que se detecte un cambio.
+
+
+
+EJEMPLO R1
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.1 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+EJEMPLO R2
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.2 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+
+EJEMPLO R3
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.3 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+
+EJEMPLO R4
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.4 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+
+EJEMPLO R5
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.5 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+
+EJEMPLO R6
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.6 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+EJEMPLO R7
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.7 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+
+EJEMPLO R8
+enable
+configure terminal
+interface serial 0/0/0
+encapsulation frame-relay
+ip address 10.10.0.8 255.255.255.0
+frame-relay interface-dlci 100
+frame-relay interface-dlci 101
+bandwidth 512
+no shutdown
+exit
+exit 
+

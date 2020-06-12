@@ -1,0 +1,8 @@
+-----------VLAN ESTACIONAMIENTO-----------
+
+--------VLAN CASETA DE CONTROL--------
+vlan 700
+name vlan_e_caseta_de_control
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 700

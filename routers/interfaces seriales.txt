@@ -1,0 +1,67 @@
+R1
+interface serial 0/0/0
+ip address 10.10.0.1 255.255.255.0
+no shutdown
+exit
+=============================
+R2
+interface serial 0/0/0
+ip address 10.10.0.2 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/0/1
+ip address 11.11.0.1 255.255.255.0
+no shutdown
+exit
+=============================
+R3
+interface serial 0/0/1
+ip address 11.11.0.2 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/0/0
+ip address 12.12.0.1 255.255.255.0
+no shutdown
+exit
+=============================
+R4
+interface serial 0/0/1
+ip address 12.12.0.2 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/0/0
+ip address 13.13.0.1 255.255.255.0
+no shutdown
+exit
+=============================
+R5
+interface serial 0/0/1
+ip address 13.13.0.2 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/0/0
+ip address 14.14.0.1 255.255.255.0
+no shutdown
+exit
+=============================
+R6
+interface serial 0/0/1
+ip address 14.14.0.2 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/0/0
+ip address 15.15.0.1 255.255.255.0
+no shutdown
+exit
+
+=============================
+R7
+interface serial 0/0/1
+ip address 15.15.0.2 255.255.255.0
+no shutdown
+exit

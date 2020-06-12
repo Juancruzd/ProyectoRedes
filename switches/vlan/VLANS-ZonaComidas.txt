@@ -1,0 +1,22 @@
+-----------VLAN ZONA DE COMIDAS-----------
+
+--------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA (10)--------
+vlan 500
+name vlan_zdc_establecimiento_de_comida_rapida
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 500
+
+
+--------VLAN PATIO DE COMIDAS (2-2routers)--------
+vlan 510
+name vlan_zdc_1_patio_de_comidas
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 510
+
+vlan 511
+name vlan_zdc_2_patio_de_comidas
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 511

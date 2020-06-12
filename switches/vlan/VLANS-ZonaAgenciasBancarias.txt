@@ -1,0 +1,48 @@
+-----------VLAN ZONA DE AGENCIAS BANCARIAS-----------
+-----------AGENCIAS BANCARIAS-----------
+
+--------VLAN AGENCIAS BANCARIAS--------
+vlan 300
+name vlan_zdab_ab_agencia_bancaria
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 300
+
+
+--------VLAN GERENCIA--------
+vlan 303
+name vlan_zdab_ab_gerencia
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 303
+
+--------VLAN SECRETARIA--------
+vlan 304
+name vlan_zdab_ab_secretaria
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 304
+
+--------VLAN VENTANILLAS--------
+vlan 305
+name vlan_zdab_ab_1_ventanilla
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 305
+
+
+--------VLAN BOVEDA Y ANTE-BOVEDA--------
+vlan 309
+name vlan_zdab_ab_boveda_y_anteboveda
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 309
+
+--------VLAN CAJEROS AUTOMATICOS--------
+vlan 310
+name vlan_zdab_ab_1_cajero_automatico
+interface range fast 0/1-10
+switchport mode access
+switchport access vlan 310
+
+

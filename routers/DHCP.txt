@@ -1,0 +1,453 @@
+--------VLAN OFICINA DE GERENCIA--------
+ip dhcp pool vlan 100
+network 192.168.0.0 255.255.255.248
+default-router 192.168.0.6
+dns-server 8.8.8.8
+
+--------VLAN CONTABILIDAD--------
+ip dhcp pool vlan 101
+network 192.168.0.8 255.255.255.248
+default-router 192.168.0.14
+dns-server 8.8.8.8
+
+--------VLAN MARKETING
+ip dhcp pool vlan 102
+network 192.168.0.16 255.255.255.248
+default-router 192.168.0.22
+dns-server 8.8.8.8
+
+--------VLAN SECRETARIA--------
+
+ip dhcp pool vlan 103
+network 192.168.0.24 255.255.255.248
+default-router 192.168.0.30
+dns-server 8.8.8.8
+
+
+
+
+--------VLAN SALA DE JUNTAS--------
+ip dhcp pool vlan 105
+network 192.168.0.32 255.255.255.240
+default-router 192.168.0.46
+dns-server 8.8.8.8
+
+--------VLAN ESTAR ESPERA--------
+ip dhcp pool vlan 106
+network 192.168.0.48 255.255.255.248
+default-router 192.168.0.54
+dns-server 8.8.8.8
+
+--------VLAN CUARTO DE SEGURIDAD--------
+
+ip dhcp pool vlan 107
+network 192.168.0.56 255.255.255.248
+default-router 192.168.0.62
+dns-server 8.8.8.8
+
+--------VLAN DEPARTAMENTO DE REDES--------
+
+ip dhcp pool vlan 108
+network 192.168.0.64 255.255.255.248
+default-router 192.168.0.70
+dns-server 8.8.8.8
+
+--------VLAN DEPARTAMENTO DE SERVIDORES--------
+ip dhcp pool vlan 109
+network 192.168.0.72 255.255.255.248
+default-router 192.168.0.78
+dns-server 8.8.8.8
+
+--------VLAN SERVERS--------
+ip dhcp pool vlan 110
+network 192.168.0.80 255.255.255.248
+default-router 192.168.0.86
+dns-server 8.8.8.8
+
+
+
+--------VLAN SALA DE EXHIBICION Y VENTAS (8-wireless)--------
+ip dhcp pool vlan 200
+network 182.168.0.0 255.255.255.128
+default-router 182.168.0.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 201
+network 182.168.0.128 255.255.255.128
+default-router 182.168.0.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 202
+network 182.168.1.0 255.255.255.128
+default-router 182.168.1.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 203
+network 182.168.1.128 255.255.255.128
+default-router 182.168.1.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 204
+network 182.168.2.0 255.255.255.128
+default-router 182.168.2.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 205
+network 182.168.2.128 255.255.255.128
+default-router 182.168.2.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 206
+network 182.168.3.0 255.255.255.128
+default-router 182.168.3.126
+dns-server 8.8.8.8
+
+
+ip dhcp pool vlan 207
+network 182.168.3.128 255.255.255.128
+default-router 182.168.3.254
+dns-server 8.8.8.8
+
+--------VLAN CAJAS--------
+ip dhcp pool vlan 208
+network 182.168.4.0 255.255.255.248
+default-router 182.168.4.6
+dns-server 8.8.8.8
+
+--------VLAN ADMINISTRACION Y SSHH--------
+ip dhcp pool vlan 209
+network 182.168.4.8 255.255.255.248
+default-router 182.168.4.14
+dns-server 8.8.8.8
+
+
+--------VLAN SECRETARIA Y ARCHIVO-
+ip dhcp pool vlan 210
+network 182.168.4.16 255.255.255.248
+default-router 182.168.4.22
+dns-server 8.8.8.8
+
+
+--------VLAN OFICINA DE CONTABILIDAD---
+ip dhcp pool vlan 211
+network 182.168.4.24 255.255.255.248
+default-router 182.168.4.30
+dns-server 8.8.8.8
+
+--------VLAN OFICINA DE JEFE DE VENTAS---
+ip dhcp pool vlan 212
+network 182.168.4.32 255.255.255.248
+default-router 182.168.4.38
+dns-server 8.8.8.8
+
+--------VLAN OFICINA DE PERSONAL-------
+ip dhcp pool vlan 213
+network 182.168.4.40 255.255.255.248
+default-router 182.168.4.46
+dns-server 8.8.8.8
+
+
+--------VLAN SALA DE REUNIONES--------
+ip dhcp pool vlan 214
+network 182.168.4.48 255.255.255.240
+default-router 182.168.4.62
+dns-server 8.8.8.8
+
+--------VLAN CUARTO DE CONTROL TV--------
+ip dhcp pool vlan 215
+network 182.168.4.64 255.255.255.248
+default-router 182.168.4.70
+dns-server 8.8.8.8
+
+--------VLAN CAJA--------
+ip dhcp pool vlan 216
+network 182.168.4.72 255.255.255.248
+default-router 182.168.4.78
+dns-server 8.8.8.8
+
+--------VLAN AREA ADMINISTRATIVA--------
+ip dhcp pool vlan 217
+network 182.168.4.80 255.255.255.248
+default-router 182.168.4.86
+dns-server 8.8.8.8
+
+--------VLAN TIENDAS DE ZAPATOS (5)------
+ip dhcp pool vlan 218
+network 182.168.4.128 255.255.255.192
+default-router 182.168.4.190
+dns-server 8.8.8.8
+
+ip dhcp excluded-address 182.168.4.160
+ip dhcp excluded-address 182.168.4.191
+ip dhcp excluded-address 182.168.4.128 182.168.4.159
+
+
+ip dhcp pool vlan 219
+network 182.168.4.192 255.255.255.192
+default-router 182.168.4.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 220
+network 182.168.5.0 255.255.255.192
+default-router 182.168.5.62
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 221
+network 182.168.5.64 255.255.255.192
+default-router 182.168.5.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 222
+network 182.168.5.128 255.255.255.192
+default-router 182.168.5.190
+dns-server 8.8.8.8
+--------VLAN TIENDAS DE ROPA (10)--------
+ip dhcp pool vlan 223
+network 182.168.5.192 255.255.255.192
+default-router 182.168.5.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 224
+network 182.168.6.0 255.255.255.192
+default-router 182.168.6.62
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 225
+network 182.168.6.64 255.255.255.192
+default-router 182.168.6.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 226
+network 182.168.6.128 255.255.255.192
+default-router 182.168.6.190
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 227
+network 182.168.6.192 255.255.255.192
+default-router 182.168.6.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 228
+network 182.168.7.0 255.255.255.192
+default-router 182.168.7.62
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 229
+network 182.168.7.64 255.255.255.192
+default-router 182.168.7.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 230
+network 182.168.7.128 255.255.255.192
+default-router 182.168.7.190
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 231
+network 182.168.7.192 255.255.255.192
+default-router 182.168.7.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 232
+network 182.168.8.0 255.255.255.192
+default-router 182.168.8.62
+dns-server 8.8.8.8
+--------VLAN TIENDAS GENERALES (10)------
+ip dhcp pool vlan 233
+network 182.168.8.64 255.255.255.192
+default-router 182.168.8.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 234
+network 182.168.8.128 255.255.255.192
+default-router 182.168.8.190
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 235
+network 182.168.8.192 255.255.255.192
+default-router 182.168.8.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 236
+network 182.168.9.0 255.255.255.192
+default-router 182.168.9.62
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 237
+network 182.168.9.64 255.255.255.192
+default-router 182.168.9.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 238
+network 182.168.9.128 255.255.255.192
+default-router 182.168.9.190
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 239
+network 182.168.9.192 255.255.255.192
+default-router 182.168.9.254
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 240
+network 182.168.10.0 255.255.255.192
+default-router 182.168.10.62
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 241
+network 182.168.10.64 255.255.255.192
+default-router 182.168.10.126
+dns-server 8.8.8.8
+
+ip dhcp pool vlan 242
+network 182.168.10.128 255.255.255.192
+default-router 182.168.10.190
+dns-server 8.8.8.8
+
+
+--------VLAN CASETAS DE VENTAS -------
+ip dhcp pool vlan 243
+network 182.168.4.88 255.255.255.240
+default-router 182.168.4.102
+dns-server 8.8.8.8
+
+
+
+
+------VLAN AGENCIAS BANCARIAS
+
+ip dhcp pool vlan 300
+network 172.168.0.0 255.255.255.224
+default-router 172.168.0.30	
+dns-server 8.8.8.8
+-------VLAN GERENCIA
+
+ip dhcp pool vlan 303
+network 172.168.0.32 255.255.255.248
+default-router 172.168.0.38
+dns-server 8.8.8.8
+--------VLAN SECRETARIA
+ip dhcp pool vlan 304
+network 172.168.0.40 255.255.255.248
+default-router 172.168.0.46
+dns-server 8.8.8.8
+
+-------VLAN VENTANILLAS
+ip dhcp pool vlan 304
+network 172.168.0.48 255.255.255.240
+default-router 172.168.0.62
+dns-server 8.8.8.8
+
+
+-------VLAN BOVEDA Y ANTE-BOVEDA
+ip dhcp pool vlan 309
+network 172.168.0.64 255.255.255.248
+default-router 172.168.0.70
+dns-server 8.8.8.8
+--------VLAN CAJEROS AUTOATICOS
+ip dhcp pool vlan 310
+network 172.168.0.72 255.255.255.248
+default-router 172.168.0.78
+dns-server 8.8.8.8
+
+
+
+
+--------VLANS CABINAS 
+ip dhcp pool vlan 400
+network 162.168.0.0 255.255.255.240
+default-router 162.168.0.14
+dns-server 8.8.8.8
+
+--------VLAN BOLETERIA
+ip dhcp pool vlan 406
+network 162.168.0.16 255.255.255.248
+default-router 162.168.0.22
+dns-server 8.8.8.8
+
+--------VLAN ADMINISTRACION cine
+ip dhcp pool vlan 407
+network 162.168.0.24 255.255.255.248
+default-router 162.168.0.30
+dns-server 8.8.8.8
+
+--------VLAN ESPERA Y SECRETARIA
+ip dhcp pool vlan 408
+network 162.168.0.32 255.255.255.248
+default-router 162.168.0.38
+dns-server 8.8.8.8
+
+--------VLAN ADMINISTRACION Gimnasio
+ip dhcp pool vlan 409
+network 162.168.0.40 255.255.255.248
+default-router 162.168.0.46
+dns-server 8.8.8.8
+
+--------VLAN ESTAR
+ip dhcp pool vlan 410
+network 162.168.0.48 255.255.255.248
+default-router 162.168.0.54
+dns-server 8.8.8.8
+
+--------VLAN AREA DE MESAS--------
+ip dhcp pool vlan 411
+network 162.168.0.128 255.255.255.128
+default-router 162.168.0.254
+dns-server 8.8.8.8
+
+---------BARRA DE ATENCION
+ip dhcp pool vlan 412
+network 162.168.0.56 255.255.255.248
+default-router 162.168.0.62
+dns-server 8.8.8.8
+
+--------VLAN ADMINISTRACION area de juegos
+
+ip dhcp pool vlan 413
+network 162.168.0.64 255.255.255.248
+default-router 162.168.0.70
+dns-server 8.8.8.8
+
+
+
+--------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA (10)--------
+
+
+ip dhcp pool vlan 500
+network 152.168.0.0 255.255.255.192
+default-router 152.168.0.62
+dns-server 8.8.8.8
+
+--------VLAN PATIO DE COMIDAS--------
+
+
+ip dhcp pool vlan 510
+network 152.168.0.64 255.255.255.0
+default-router 152.168.1.62
+dns-server 8.8.8.8
+
+
+ip dhcp pool vlan 511
+network 152.168.1.64 255.255.255.0
+default-router 152.168.2.62
+dns-server 8.8.8.8
+
+
+*---VLAN SALA DE MAQUINAS Y EQUIPOS--------
+
+ip dhcp pool vlan 600
+network 142.168.0.0 255.255.255.240
+default-router 142.168.0.14
+dns-server 8.8.8.8
+
+
+*---VLAN CASETA DE CONTROL--------
+
+ip dhcp pool vlan 700
+network 132.168.0.0 255.255.255.240
+default-router 132.168.0.14
+dns-server 8.8.8.8
+
+
+
+
+
+

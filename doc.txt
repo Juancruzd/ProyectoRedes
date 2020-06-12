@@ -1,0 +1,28 @@
+sala de espera(Zona administratica necesita wifi)
+los cajeros
+no se que sea el foyer(zona de entrete) podriamos quitarlo
+Barra(Discoteca Bar) no lleva wifi
+quitar pista de carros
+Patio de comidas(puede necesiar wifi inalambrico)(Zona de comidas)
+Quitemos el esceneario(Zona de comidas)
+Quitar caja de fuerza no tenemos idea de que sea(Servicios generales)
+
+
+zona administrativa
+Agregamos Departamentos de Redes y Departamento de Servidores
+quitar topico
+
+
+Zona Comercial
+Definir que son las tiendas anclas(o saber a q se refiere ese termino)
+
+
+Area de servicio
+Deposito frio, seco y area de preparacion quitar
+
+Zona de entretenimiento 
+Confiteria no lleva acceso ala red
+Sala de maquinas la quitamos
+
+Zona de comidas
+10 comida rapida, q es 10 ? 10 areas? definir
