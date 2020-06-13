@@ -1,0 +1,15 @@
+***Poner puertos en trunk*** 
+----SWITCH MODO SERVER----
+ vtp domain redes
+ vtp mode server
+ vtp password cisco
+
+----SWITCH MODO TRANSPARENT----
+ vtp domain redes
+ vtp mode transparent
+ vtp password cisco
+
+----SWITCH MODO CLIENT----
+ vtp domain redes
+ vtp mode client
+ vtp password cisco
