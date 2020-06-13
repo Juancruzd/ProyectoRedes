@@ -1,22 +1,36 @@
 -----------VLAN ZONA DE COMIDAS-----------
 
---------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA (10)--------
+--------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA --------
+**********************PRIMER SWITCH**********************
+*********************************************************
+******Se aplica la vlan en 2 switches porque ocupa 40 host y se dividó 20 host en cada switch******
+
 vlan 500
 name vlan_zdc_establecimiento_de_comida_rapida
-interface range fast 0/1-10
+interface range fast 0/1-20
+switchport mode access
+switchport access vlan 500
+
+**********************SEGUNDO SWITCH**********************
+*********************************************************
+vlan 500
+name vlan_zdc_establecimiento_de_comida_rapida
+interface range fast 0/1-20
 switchport mode access
 switchport access vlan 500
 
 
+**********************TERCER SWITCH**********************
+*********************************************************
 --------VLAN PATIO DE COMIDAS (2-2routers)--------
-vlan 510
+vlan 501
 name vlan_zdc_1_patio_de_comidas
-interface range fast 0/1-10
+interface fast 0/1
 switchport mode access
-switchport access vlan 510
+switchport access vlan 501
 
-vlan 511
+vlan 502
 name vlan_zdc_2_patio_de_comidas
-interface range fast 0/1-10
+interface fast 0/2
 switchport mode access
-switchport access vlan 511
+switchport access vlan 502

@@ -3,6 +3,6 @@
 --------VLAN SALA DE MAQUINAS Y EQUIPOS--------
 vlan 600
 name vlan_sg_sala_de_maquinas_y_equipos
-interface range fast 0/1-10
+interface fast 0/1
 switchport mode access
 switchport access vlan 600

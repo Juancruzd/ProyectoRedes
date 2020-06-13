@@ -1,5 +1,36 @@
+CREACIÓN DE VLANS
+*********************************************************
+vlan 300
+name vlan_zdab_ab_agencia_bancaria
+vlan 301
+name vlan_zdab_ab_gerencia
+vlan 302
+name vlan_zdab_ab_secretaria
+vlan 303
+name vlan_zdab_ab_1_ventanilla
+vlan 304
+name vlan_zdab_ab_boveda_y_anteboveda
+vlan 305
+name vlan_zdab_ab_1_cajero_automatico
+
+*********************************************************
 -----------VLAN ZONA DE AGENCIAS BANCARIAS-----------
 -----------AGENCIAS BANCARIAS-----------
+
+
+**********************PRIMER SWITCH**********************
+*********************************************************
+
+--------VLAN AGENCIAS BANCARIAS--------
+vlan 300
+name vlan_zdab_ab_agencia_bancaria
+interface range fast 0/1-20
+switchport mode access
+switchport access vlan 300
+
+**********************SEGUNDO SWITCH**********************
+*********************************************************
+****Se aplica la misma vlan en el segundo switch porque quedan puertos por asignar de esta vlan, entonces solo se asignan los host restantes (21-30)****
 
 --------VLAN AGENCIAS BANCARIAS--------
 vlan 300
@@ -10,39 +41,44 @@ switchport access vlan 300
 
 
 --------VLAN GERENCIA--------
-vlan 303
+vlan 301
 name vlan_zdab_ab_gerencia
-interface range fast 0/1-10
+interface range fast 0/11-13
+switchport mode access
+switchport access vlan 301
+
+--------VLAN SECRETARIA--------
+vlan 302
+name vlan_zdab_ab_secretaria
+interface range fast 0/14-16
+switchport mode access
+switchport access vlan 302
+
+--------VLAN VENTANILLAS--------
+vlan 303
+name vlan_zdab_ab_1_ventanilla
+interface range fast 0/17-20
 switchport mode access
 switchport access vlan 303
 
---------VLAN SECRETARIA--------
-vlan 304
-name vlan_zdab_ab_secretaria
-interface range fast 0/1-10
-switchport mode access
-switchport access vlan 304
 
---------VLAN VENTANILLAS--------
-vlan 305
-name vlan_zdab_ab_1_ventanilla
-interface range fast 0/1-10
-switchport mode access
-switchport access vlan 305
+
+**********************CUARTO SWITCH**********************
+*********************************************************
 
 
 --------VLAN BOVEDA Y ANTE-BOVEDA--------
-vlan 309
+vlan 304
 name vlan_zdab_ab_boveda_y_anteboveda
-interface range fast 0/1-10
+interface fast 0/1
 switchport mode access
-switchport access vlan 309
+switchport access vlan 304
 
 --------VLAN CAJEROS AUTOMATICOS--------
-vlan 310
+vlan 305
 name vlan_zdab_ab_1_cajero_automatico
-interface range fast 0/1-10
+interface range fast 0/2-4
 switchport mode access
-switchport access vlan 310
+switchport access vlan 305
 
 

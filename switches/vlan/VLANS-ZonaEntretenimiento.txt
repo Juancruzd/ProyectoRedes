@@ -1,78 +1,90 @@
 -----------VLAN ZONA ENTRETENIMIENTO-----------
 -----------CINE-----------
 
+**********************PRIMER SWITCH**********************
+*********************************************************
+
 --------VLAN CABINAS--------
 vlan 400
 name vlan_ze_c_1_cabina
-interface range fast 0/1-10
+interface range fast 0/1-12
 switchport mode access
 switchport access vlan 400
 
 
 --------VLAN BOLETERIA--------
-vlan 406
+vlan 401
 name vlan_ze_c_boleteria
-interface range fast 0/1-10
+interface fast 0/13
 switchport mode access
-switchport access vlan 406
+switchport access vlan 401
 
 --------VLAN ADMINISTRACION--------
-vlan 407
+vlan 402
 name vlan_ze_c_administracion
-interface range fast 0/1-10
+interface range fast 0/14-16
 switchport mode access
-switchport access vlan 407
+switchport access vlan 402
+
+
+**********************SEGUNDO SWITCH**********************
+*********************************************************
 
 --------VLAN ESPERA Y SECRETARIA--------
-vlan 408
+vlan 403
 name vlan_ze_c_espera_y_secretaria
-interface range fast 0/1-10
+interface range fast 0/1-5
 switchport mode access
-switchport access vlan 408
+switchport access vlan 403
 
 
 
 -----------GIMNASIO-----------
 
 --------VLAN ADMINISTRACION--------
-vlan 409
+vlan 404
 name vlan_ze_g_administracion
-interface range fast 0/1-10
+interface range fast 0/6-8
 switchport mode access
-switchport access vlan 409
+switchport access vlan 404
 
 --------VLAN ESTAR--------
-vlan 410
+vlan 405
 name vlan_ze_g_estar
-interface range fast 0/1-10
+interface fast 0/9
 switchport mode access
-switchport access vlan 410
-
-
-
------------DISCOTECA BAR-----------
-
---------VLAN AREA DE MESAS--------
-vlan 411
-name vlan_ze_db_area_de_mesas
-interface range fast 0/1-10
-switchport mode access
-switchport access vlan 411
+switchport access vlan 405
 
 
 
 -----------AREA DE JUEGOS-----------
 
 --------VLAN BARRA DE ATENCION--------
-vlan 412
+vlan 406
 name vlan_ze_adj_barra_de_atencion
-interface range fast 0/1-10
+interface fast 0/10
 switchport mode access
-switchport access vlan 412
+switchport access vlan 406
 
 --------VLAN ADMINISTRACION--------
-vlan 413
+vlan 407
 name vlan_ze_adj_administracion
-interface range fast 0/1-10
+interface range fast 0/11-13
 switchport mode access
-switchport access vlan 413
+switchport access vlan 407
+
+
+-----------DISCOTECA BAR-----------
+**********Se dividió los 100 host en 2 vlan 50c/u**********
+--------VLAN AREA DE MESAS--------
+vlan 408
+name vlan_ze_db_1_area_de_mesas
+interface fast 0/14
+switchport mode access
+switchport access vlan 408
+
+vlan 409
+name vlan_ze_db_2_area_de_mesas
+interface fast 0/15
+switchport mode access
+switchport access vlan 409
