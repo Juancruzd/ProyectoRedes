@@ -1,6 +1,8 @@
 R1
 ------------------------------- 
 Router eigrp 20
+network 18.18.0.0 0.0.0.255
+
  network 10.10.0.0 0.0.0.255
 
  network 192.168.0.0 0.0.0.7
@@ -32,6 +34,8 @@ network 192.168.0.40 0.0.0.7
 ------------------------------- 
 R2
  Router eigrp 20
+network 16.16.0.0 0.0.0.255
+
  network 10.10.0.0 0.0.0.255
  network 11.11.0.0 0.0.0.255
 
@@ -207,6 +211,8 @@ Router eigrp 20
 ------------------------------- 
 R3
  Router eigrp 20
+network 17.17.0.0 0.0.0.255
+
  network 11.11.0.0 0.0.0.255
  network 12.12.0.0 0.0.0.255
  network 172.168.0.0 0.0.0.31
@@ -284,7 +290,19 @@ R7
 ------------------------------- 
 R8
  Router eigrp 20
- network 15.15.0.0 0.0.0.255
+network 189.189.189.0 0.0.0.15
+ network 16.16.0.0 0.0.0.255
+network 17.17.0.0 0.0.0.255
+network 18.18.0.0 0.0.0.255
  no auto-summary
  default-information originale
+
+------------------------------- 
+RISP
+ Router eigrp 20
+network 189.189.189.0 0.0.0.15
+ network 5.5.5.0 0.0.0.255
+network 6.6.6.0 0.0.0.255
+network 7.7.7.0 0.0.0.255
+ no auto-summary 
 

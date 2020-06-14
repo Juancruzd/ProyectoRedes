@@ -3,6 +3,10 @@ interface serial 0/0/0
 ip address 10.10.0.1 255.255.255.0
 no shutdown
 exit
+interface serial 0/1/0
+ip address 18.18.0.1 255.255.255.0
+no shutdown
+exit
 =============================
 R2
 interface serial 0/0/0
@@ -12,6 +16,11 @@ exit
 
 interface serial 0/0/1
 ip address 11.11.0.1 255.255.255.0
+no shutdown
+exit
+
+interface serial 0/1/0
+ip address 16.16.0.1 255.255.255.0
 no shutdown
 exit
 =============================
@@ -25,6 +34,11 @@ interface serial 0/0/0
 ip address 12.12.0.1 255.255.255.0
 no shutdown
 exit
+
+interface serial 0/1/0
+ip address 17.17.0.1 255.255.255.0
+no shutdown
+exit
 =============================
 R4
 interface serial 0/0/1
@@ -33,7 +47,7 @@ no shutdown
 exit
 
 interface serial 0/0/0
-ip address 13.13.0.1 255.255.255.0
+ip address 12.12.0.1 255.255.255.0
 no shutdown
 exit
 =============================
@@ -63,5 +77,20 @@ exit
 R7
 interface serial 0/0/1
 ip address 15.15.0.2 255.255.255.0
+no shutdown
+exit
+
+=============================
+R8
+interface serial 0/0/1
+ip address 18.18.0.2 255.255.255.0
+no shutdown
+exit
+interface serial 0/1/0
+ip address 16.16.0.2 255.255.255.0
+no shutdown
+exit
+interface serial 0/1/1
+ip address 17.17.0.2 255.255.255.0
 no shutdown
 exit

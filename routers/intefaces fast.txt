@@ -1,0 +1,43 @@
+
+
+RISP
+interface gigabitethernet 0/2
+ip address 19.19.0.2 255.255.255.0 
+no shutdown
+exit
+RCLIENTE
+interface gigabitethernet 0/2
+ip address 19.19.0.1 255.255.255.0 
+no shutdown
+exit
+
+RGOOGLE
+interface gigabitethernet 0/0
+ip address 5.5.5.1 255.255.255.0 
+no shutdown
+exit
+interface gigabitethernet 0/1
+ip address 192.168.100.254 255.255.255.0 
+no shutdown
+exit
+
+RFacebook
+interface gigabitethernet 0/0
+ip address 6.6.6.1 255.255.255.0 
+no shutdown
+exit
+interface gigabitethernet 0/1
+ip address 192.168.100.254 255.255.255.0 
+no shutdown
+exit
+
+RCisco
+interface gigabitethernet 0/0
+ip address 7.7.7.1 255.255.255.0 
+no shutdown
+exit
+interface gigabitethernet 0/1
+ip address 192.168.100.254 255.255.255.0 
+no shutdown
+exit
+

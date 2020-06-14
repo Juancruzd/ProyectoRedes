@@ -181,7 +181,7 @@ exit
 
  interface fastethernet 0/0.218
 encapsulation dot1Q 218
-ip address 182.168.4.102 255.255.255.240
+ip address 182.168.4.94 255.255.255.248
 no shutdown
 exit 
  interface fastethernet 0/0.219
@@ -611,5 +611,24 @@ R7
 interface fastethernet 0/0.700
 encapsulation dot1Q 700
 ip address 132.168.0.14 255.255.255.240
+no shutdown
+exit 
+=============================
+RISP
+interface gigabitethernet  0/0.5
+encapsulation dot1Q 5
+ip address 5.5.5.254 255.255.255.0
+no shutdown
+exit 
+
+interface gigabitethernet 0/0.6
+encapsulation dot1Q 6
+ip address 6.6.6.254 255.255.255.0
+no shutdown
+exit 
+
+interface gigabitethernet  0/0.7
+encapsulation dot1Q 7
+ip address 7.7.7.254 255.255.255.0
 no shutdown
 exit 

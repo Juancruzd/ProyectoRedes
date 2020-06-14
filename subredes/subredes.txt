@@ -75,7 +75,7 @@ que el maximo de capacidad sea 1838 personas o usuarios a conectar a la red del 
 por ejemplo para las salas de exhibicion y ventas se contara con 8 zonas wifi dentro del centro 
 comercial para el uso solo de redes sociales y navegacion para los usuarios visitantes que tendra en conjunto un limite de 800 hosts, asi tambien se toma en cuenta las
 conexiones q seran requeridas por los locales o comercios dentro de la zona comercial, cada local contara con 10 conexiones wifi y 10 conexiones ethernet estas para uso de 
-internet y asi puedan acceder a su propio sistema pero tambien se toma en cuenta que el uso de estas 20 conexiones pueden ser pocas es por ello que se tiene una reserva de 
+internet y asi puedan acceder a su propio sistema pero tambien se toma en cuenta que el uso de estas 10 conexiones pueden ser pocas es por ello que se tiene una reserva de 
 20 conexiones wifi y 20 conexiones ethernet por local, si es que llegara a ser requeridas cada nueva conexion tendra un costo adicional a las actuales.
 
 Bloque de direcciones de red

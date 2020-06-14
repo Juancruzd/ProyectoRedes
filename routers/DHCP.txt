@@ -489,31 +489,31 @@ dns-server 8.8.8.8
 
 
 --------VLANS CABINAS 
-ip dhcp pool vlan 400
+ip dhcp pool vlan400
 network 162.168.0.0 255.255.255.240
 default-router 162.168.0.14
 dns-server 8.8.8.8
 
 --------VLAN BOLETERIA
-ip dhcp pool vlan 401
+ip dhcp pool vlan401
 network 162.168.0.16 255.255.255.248
 default-router 162.168.0.22
 dns-server 8.8.8.8
 
 --------VLAN ADMINISTRACION cine
-ip dhcp pool vlan 402
+ip dhcp pool vlan402
 network 162.168.0.24 255.255.255.248
 default-router 162.168.0.30
 dns-server 8.8.8.8
 
 --------VLAN ESPERA Y SECRETARIA
-ip dhcp pool vlan 403
+ip dhcp pool vlan403
 network 162.168.0.32 255.255.255.248
 default-router 162.168.0.38
 dns-server 8.8.8.8
 
 --------VLAN ADMINISTRACION Gimnasio
-ip dhcp pool vlan 404
+ip dhcp pool vlan404
 network 162.168.0.40 255.255.255.248
 default-router 162.168.0.46
 dns-server 8.8.8.8
@@ -527,7 +527,7 @@ NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
 
 
 ---------BARRA DE ATENCION
-ip dhcp pool vlan 406
+ip dhcp pool vlan406
 network 162.168.0.56 255.255.255.248
 default-router 162.168.0.62
 dns-server 8.8.8.8
@@ -536,7 +536,7 @@ dns-server 8.8.8.8
 
 --------VLAN ADMINISTRACION area de juegos
 
-ip dhcp pool vlan 407
+ip dhcp pool vlan407
 network 162.168.0.64 255.255.255.248
 default-router 162.168.0.70
 dns-server 8.8.8.8
@@ -556,16 +556,12 @@ NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
 (64 hosts)		162.168.0.192	162.168.0.193 - 162.168.0.254	162.168.0.255		255.255.255.192/26
 
 
-ip dhcp pool vlan 409
-network 162.168.0.192 255.255.255.192
-default-router 162.168.0.254
-dns-server 8.8.8.8
 
 
 --------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA (10)--------
 
 
-ip dhcp pool vlan 500
+ip dhcp pool vlan500
 network 152.168.0.0 255.255.255.0
 default-router 152.168.0.254
 dns-server 8.8.8.8
@@ -586,7 +582,7 @@ NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
 
 *---VLAN SALA DE MAQUINAS Y EQUIPOS--------
 
-ip dhcp pool vlan 600
+ip dhcp pool vlan600
 network 142.168.0.0 255.255.255.240
 default-router 142.168.0.14
 dns-server 8.8.8.8
@@ -594,7 +590,7 @@ dns-server 8.8.8.8
 
 *---VLAN CASETA DE CONTROL--------
 
-ip dhcp pool vlan 700
+ip dhcp pool vlan700
 network 132.168.0.0 255.255.255.240
 default-router 132.168.0.14
 dns-server 8.8.8.8
