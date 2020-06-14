@@ -1,5 +1,5 @@
 CREACIÓN DE VLANS
-
+*********************************************************
 vlan 100
 name vlan_za_aa_oficina_de_gerencia
 vlan 101
@@ -9,17 +9,20 @@ name vlan_za_aa_marketing
 vlan 103
 name vlan_za_aa_secretaria
 vlan 104
-name vlan_za_aa_sala_de_juntas
+name vlan_za_aa_1_sala_de_juntas
 vlan 105
-name vlan_za_aa_estar_espera
+name vlan_za_aa_2_sala_de_juntas
 vlan 106
-name vlan_za_aa_cuarto_de_seguridad
+name vlan_za_aa_estar_espera
 vlan 107
-name vlan_za_ddi_departamento_de_redes
+name vlan_za_aa_cuarto_de_seguridad
 vlan 108
-name vlan_za_ddi_departamento_de_servidores
+name vlan_za_ddi_departamento_de_redes
 vlan 109
+name vlan_za_ddi_departamento_de_servidores
+vlan 110
 name vlan_za_ddi_servers
+
 *********************************************************
 -----------VLAN ZONA ADMINISTRATIVA-----------
 -----------ÁREA ADMINISTRATIVA-----------
@@ -40,7 +43,6 @@ name vlan_za_aa_contabilidad
 interface range fast 0/4-6
 switchport mode access
 switchport access vlan 101
-exit
 
 --------VLAN MARKETING--------
 vlan 102
@@ -48,14 +50,13 @@ name vlan_za_aa_marketing
 interface range fast 0/7-9
 switchport mode access
 switchport access vlan 102
-exit
+
 --------VLAN SECRETARIA--------
 vlan 103
 name vlan_za_aa_secretaria
 interface range fast 0/10-15
 switchport mode access
 switchport access vlan 103
-exit
 
 
 
@@ -64,54 +65,57 @@ exit
 
 --------VLAN SALA DE JUNTAS--------
 vlan 104
-name vlan_za_aa_sala_de_juntas
-interface range fast 0/1-8
+name vlan_za_aa_1_sala_de_juntas
+interface fast 0/1
 switchport mode access
 switchport access vlan 104
-exit
+
+--------VLAN SALA DE JUNTAS--------
+vlan 105
+name vlan_za_aa_2_sala_de_juntas
+interface range fast 0/2-8
+switchport mode access
+switchport access vlan 105
+
 
 
 --------VLAN ESTAR ESPERA--------
-vlan 105
-name vlan_za_aa_estar_espera
-interface range fast 0/9-12
-switchport mode access
-switchport access vlan 105
-exit
-
---------VLAN CUARTO DE SEGURIDAD--------
 vlan 106
-name vlan_za_aa_cuarto_de_seguridad
-interface range fast 0/13-15
+name vlan_za_aa_estar_espera
+interface fast 0/9
 switchport mode access
 switchport access vlan 106
-exit
+
+--------VLAN CUARTO DE SEGURIDAD--------
+vlan 107
+name vlan_za_aa_cuarto_de_seguridad
+interface range fast 0/12-14
+switchport mode access
+switchport access vlan 107
 
 
 -----------DEPARTAMENTO DE INFRAESTRUCTURA-----------
 
 --------VLAN DEPARTAMENTO DE REDES--------
-vlan 107
+vlan 108
 name vlan_za_ddi_departamento_de_redes
-interface range fast 0/16-19
+interface range fast 0/15-18
 switchport mode access
-switchport access vlan 107
-exit
+switchport access vlan 108
 
 
 **********************TERCER SWITCH**********************
 *********************************************************
 --------VLAN DEPARTAMENTO DE SERVIDORES--------
-vlan 108
+vlan 109
 name vlan_za_ddi_departamento_de_servidores
 interface range fast 0/1-4
 switchport mode access
-switchport access vlan 108
-exit
+switchport access vlan 109
+
 --------VLAN SERVERS--------
-vlan 109
+vlan 110
 name vlan_za_ddi_servers
 interface range fast 0/5-7
 switchport mode access
-switchport access vlan 109
-exit
+switchport access vlan 110

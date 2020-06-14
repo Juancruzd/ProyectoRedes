@@ -23,43 +23,47 @@ network 192.168.0.24 255.255.255.248
 default-router 192.168.0.30
 dns-server 8.8.8.8
 
+--------VLAN SALA DE JUNTAS  -
+VLAN204
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+192.168.0.32	192.168.0.33 - 192.168.0.38	192.168.0.39		255.255.255.248/29
 
-
-
---------VLAN SALA DE JUNTAS--------
-ip dhcp pool vlan 105
-network 192.168.0.32 255.255.255.240
+--------VLAN SALA DE JUNTAS 2.0 -
+ip dhcp pool vlan105
+network 192.168.0.40 255.255.255.248
 default-router 192.168.0.46
 dns-server 8.8.8.8
 
+
 --------VLAN ESTAR ESPERA--------
-ip dhcp pool vlan 106
+ip dhcp pool vlan106
 network 192.168.0.48 255.255.255.248
 default-router 192.168.0.54
 dns-server 8.8.8.8
 
 --------VLAN CUARTO DE SEGURIDAD--------
 
-ip dhcp pool vlan 107
+ip dhcp pool vlan107
 network 192.168.0.56 255.255.255.248
 default-router 192.168.0.62
 dns-server 8.8.8.8
 
 --------VLAN DEPARTAMENTO DE REDES--------
 
-ip dhcp pool vlan 108
+ip dhcp pool vlan108
 network 192.168.0.64 255.255.255.248
 default-router 192.168.0.70
 dns-server 8.8.8.8
 
 --------VLAN DEPARTAMENTO DE SERVIDORES--------
-ip dhcp pool vlan 109
+ip dhcp pool vlan109
 network 192.168.0.72 255.255.255.248
 default-router 192.168.0.78
 dns-server 8.8.8.8
 
 --------VLAN SERVERS--------
-ip dhcp pool vlan 110
+ip dhcp pool vlan110
 network 192.168.0.80 255.255.255.248
 default-router 192.168.0.86
 dns-server 8.8.8.8
@@ -67,247 +71,380 @@ dns-server 8.8.8.8
 
 
 --------VLAN SALA DE EXHIBICION Y VENTAS (8-wireless)--------
-ip dhcp pool vlan 200
-network 182.168.0.0 255.255.255.128
-default-router 182.168.0.126
-dns-server 8.8.8.8
+VLAN200
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts)	182.168.0.0	182.168.0.1 - 182.168.0.126	182.168.0.127		255.255.255.128/25
 
-ip dhcp pool vlan 201
-network 182.168.0.128 255.255.255.128
-default-router 182.168.0.254
-dns-server 8.8.8.8
+VLAN201
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) 182.168.0.128	182.168.0.129 - 182.168.0.254	182.168.0.255		255.255.255.128/25
 
-ip dhcp pool vlan 202
-network 182.168.1.0 255.255.255.128
-default-router 182.168.1.126
-dns-server 8.8.8.8
+VLAN202
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) (126 hosts) 182.168.1.0	182.168.1.1 - 182.168.1.126	182.168.1.127		255.255.255.128/25
 
-ip dhcp pool vlan 203
-network 182.168.1.128 255.255.255.128
-default-router 182.168.1.254
-dns-server 8.8.8.8
+VLAN203
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) (126 hosts) 182.168.1.128	182.168.1.129 - 182.168.1.254	182.168.1.255		255.255.255.128/25
 
-ip dhcp pool vlan 204
-network 182.168.2.0 255.255.255.128
-default-router 182.168.2.126
-dns-server 8.8.8.8
-
-ip dhcp pool vlan 205
-network 182.168.2.128 255.255.255.128
-default-router 182.168.2.254
-dns-server 8.8.8.8
-
-ip dhcp pool vlan 206
-network 182.168.3.0 255.255.255.128
-default-router 182.168.3.126
-dns-server 8.8.8.8
+VLAN204
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) 182.168.2.0	182.168.2.1 - 182.168.2.126	182.168.2.127		255.255.255.128/25
 
 
-ip dhcp pool vlan 207
-network 182.168.3.128 255.255.255.128
-default-router 182.168.3.254
-dns-server 8.8.8.8
+VLAN205
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) 182.168.2.128	182.168.2.129 - 182.168.2.254	182.168.2.255		255.255.255.128/25
+
+VLAN206
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+13-14 (126 hosts) 182.168.3.0	182.168.3.1 - 182.168.3.126	182.168.3.127		255.255.255.128/25
+
+
+VLAN207
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(126 hosts) 182.168.3.128	182.168.3.129 - 182.168.3.254	182.168.3.255		255.255.255.128/25 
+
 
 --------VLAN CAJAS--------
-ip dhcp pool vlan 208
+ip dhcp pool vlan208
 network 182.168.4.0 255.255.255.248
 default-router 182.168.4.6
-dns-server 8.8.8.8
-
---------VLAN ADMINISTRACION Y SSHH--------
-ip dhcp pool vlan 209
+dns-server 8.8.8.8 
+ip dhcp pool vlan209
 network 182.168.4.8 255.255.255.248
 default-router 182.168.4.14
-dns-server 8.8.8.8
+dns-server 8.8.8.8 
 
-
---------VLAN SECRETARIA Y ARCHIVO-
-ip dhcp pool vlan 210
+ip dhcp pool vlan210
 network 182.168.4.16 255.255.255.248
 default-router 182.168.4.22
-dns-server 8.8.8.8
+dns-server 8.8.8.8 
 
-
---------VLAN OFICINA DE CONTABILIDAD---
-ip dhcp pool vlan 211
+ip dhcp pool vlan211
 network 182.168.4.24 255.255.255.248
 default-router 182.168.4.30
-dns-server 8.8.8.8
-
---------VLAN OFICINA DE JEFE DE VENTAS---
-ip dhcp pool vlan 212
+dns-server 8.8.8.8 
+ip dhcp pool vlan212
 network 182.168.4.32 255.255.255.248
 default-router 182.168.4.38
 dns-server 8.8.8.8
 
 --------VLAN OFICINA DE PERSONAL-------
-ip dhcp pool vlan 213
+ip dhcp pool vlan213
 network 182.168.4.40 255.255.255.248
 default-router 182.168.4.46
 dns-server 8.8.8.8
 
 
 --------VLAN SALA DE REUNIONES--------
-ip dhcp pool vlan 214
+ip dhcp pool vlan214
 network 182.168.4.48 255.255.255.240
 default-router 182.168.4.62
 dns-server 8.8.8.8
-
---------VLAN CUARTO DE CONTROL TV--------
-ip dhcp pool vlan 215
+exit 
+ip dhcp pool vlan215
 network 182.168.4.64 255.255.255.248
 default-router 182.168.4.70
 dns-server 8.8.8.8
-
---------VLAN CAJA--------
-ip dhcp pool vlan 216
+exit 
+ip dhcp pool vlan216
 network 182.168.4.72 255.255.255.248
 default-router 182.168.4.78
 dns-server 8.8.8.8
-
---------VLAN AREA ADMINISTRATIVA--------
-ip dhcp pool vlan 217
+exit 
+ip dhcp pool vlan217
 network 182.168.4.80 255.255.255.248
 default-router 182.168.4.86
 dns-server 8.8.8.8
+exit
+no ip dhcp pool vlan218
+network 182.168.4.88 255.255.255.248
+default-router 182.168.4.94
+dns-server 8.8.8.8
+exit
 
---------VLAN TIENDAS DE ZAPATOS (5)------
-ip dhcp pool vlan 218
-network 182.168.4.128 255.255.255.192
+
+VLAN219
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.4.128	182.168.4.129 - 182.168.4.158	182.168.4.159		255.255.255.224/27
+	
+ip dhcp pool vlan220
+network 182.168.4.160 255.255.255.224
 default-router 182.168.4.190
 dns-server 8.8.8.8
 
-ip dhcp excluded-address 182.168.4.160
-ip dhcp excluded-address 182.168.4.191
-ip dhcp excluded-address 182.168.4.128 182.168.4.159
+-------------------
 
-
-ip dhcp pool vlan 219
-network 182.168.4.192 255.255.255.192
+VLAN221
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.4.192	182.168.4.193 - 182.168.4.222	182.168.4.223		255.255.255.224/27
+	
+ip dhcp pool vlan222
+network 182.168.4.224 255.255.255.224
 default-router 182.168.4.254
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 220
-network 182.168.5.0 255.255.255.192
+----------------------
+
+VLAN223
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.5.0	182.168.5.1 - 182.168.5.30	182.168.5.31		255.255.255.224/27
+		
+ip dhcp pool vlan224
+network 182.168.5.32 255.255.255.224
 default-router 182.168.5.62
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 221
-network 182.168.5.64 255.255.255.192
+-----------------------
+VLAN225
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.5.64	182.168.5.65 - 182.168.5.94	182.168.5.95		255.255.255.224/27 
+
+ip dhcp pool vlan226
+network 182.168.5.96 255.255.255.224
 default-router 182.168.5.126
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 222
-network 182.168.5.128 255.255.255.192
+-------------------
+VLAN227
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.5.128	182.168.5.129 - 182.168.5.158	182.168.5.159		255.255.255.224/27
+	
+ip dhcp pool vlan228
+network 182.168.5.160 255.255.255.224
 default-router 182.168.5.190
 dns-server 8.8.8.8
 --------VLAN TIENDAS DE ROPA (10)--------
-ip dhcp pool vlan 223
-network 182.168.5.192 255.255.255.192
+
+VLAN229
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.5.192	182.168.5.193 - 182.168.5.222	182.168.5.223		255.255.255.224/27
+	
+ip dhcp pool vlan230
+network 182.168.5.224 255.255.255.224
 default-router 182.168.5.254
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 224
-network 182.168.6.0 255.255.255.192
+-------
+VLAN231
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.6.0	182.168.6.1 - 182.168.6.30	182.168.6.31		255.255.255.224/27
+	
+
+ip dhcp pool vlan232
+network 182.168.6.32 255.255.255.224
 default-router 182.168.6.62
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 225
-network 182.168.6.64 255.255.255.192
+
+-----
+VLAN233
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.6.64	182.168.6.65 - 182.168.6.94	182.168.6.95 		255.255.255.224/27
+		
+
+ip dhcp pool vlan234
+network 182.168.6.96 255.255.255.224
 default-router 182.168.6.126
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 226
-network 182.168.6.128 255.255.255.192
+
+------
+VLAN235
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.6.128	182.168.6.129 - 182.168.6.158	182.168.6.159		255.255.255.224/27
+	
+
+ip dhcp pool vlan236
+network 182.168.6.160 255.255.255.224
 default-router 182.168.6.190
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 227
-network 182.168.6.192 255.255.255.192
+----
+
+VLAN237
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.6.192	182.168.6.193 - 182.168.6.222	182.168.6.223		255.255.255.224/27
+		
+ip dhcp pool vlan238
+network 182.168.6.224 255.255.255.224
 default-router 182.168.6.254
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 228
-network 182.168.7.0 255.255.255.192
+----
+
+VLAN239
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.7.0	182.168.7.1 - 182.168.7.30	182.168.7.31		255.255.255.224/27
+		
+
+ip dhcp pool vlan240
+network 182.168.7.32 255.255.255.224
 default-router 182.168.7.62
 dns-server 8.8.8.8
 
-ip dhcp pool vlan 229
-network 182.168.7.64 255.255.255.192
+-----
+VLAN241
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.7.64	182.168.7.65 - 182.168.7.94	182.168.7.95		255.255.255.224/27 
+		
+ip dhcp pool vlan242
+network 182.168.7.96 255.255.255.224
 default-router 182.168.7.126
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 230
-network 182.168.7.128 255.255.255.192
+------
+VLAN243
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.7.128	182.168.7.129 - 182.168.7.158	182.168.7.159		255.255.255.224/27
+		
+ip dhcp pool vlan244
+network 182.168.7.160 255.255.255.224
 default-router 182.168.7.190
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 231
-network 182.168.7.192 255.255.255.192
+-------
+VLAN245
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.7.192	182.168.7.193 - 182.168.7.222	182.168.7.223		255.255.255.224/27
+		
+ip dhcp pool vlan246
+network 182.168.7.224 255.255.255.224
 default-router 182.168.7.254
 dns-server 8.8.8.8
+------
 
-ip dhcp pool vlan 232
-network 182.168.8.0 255.255.255.192
+VLAN247
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.8.0	182.168.8.1 - 182.168.8.30	182.168.8.31		255.255.255.224/27
+	
+ip dhcp pool vlan248
+network 182.168.8.32 255.255.255.224
 default-router 182.168.8.62
 dns-server 8.8.8.8
 --------VLAN TIENDAS GENERALES (10)------
-ip dhcp pool vlan 233
-network 182.168.8.64 255.255.255.192
+VLAN249
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.8.64	182.168.8.65 - 182.168.8.94	182.168.8.95		255.255.255.224/27
+		
+ip dhcp pool vlan250
+network 182.168.8.96 255.255.255.224
 default-router 182.168.8.126
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 234
-network 182.168.8.128 255.255.255.192
+---------------
+VLAN251
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.8.128	182.168.8.129 - 182.168.8.158	182.168.8.159		255.255.255.224/27
+	
+ip dhcp pool vlan252
+network 182.168.8.160 255.255.255.224
 default-router 182.168.8.190
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 235
-network 182.168.8.192 255.255.255.192
+---------
+VLAN253
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.8.192	182.168.8.193 - 182.168.8.222	182.168.8.223		255.255.255.224/27
+	
+ip dhcp pool vlan254
+network 182.168.8.224 255.255.255.224
 default-router 182.168.8.254
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 236
-network 182.168.9.0 255.255.255.192
+---------------
+VLAN255
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.9.0	182.168.9.1 - 182.168.9.30	182.168.9.31		255.255.255.224/27
+	
+ip dhcp pool vlan256
+network 182.168.9.32 255.255.255.224
 default-router 182.168.9.62
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 237
-network 182.168.9.64 255.255.255.192
+-------------
+VLAN257
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.9.64	182.168.9.65 - 182.168.9.94	182.168.9.95		255.255.255.224/27
+	
+ip dhcp pool vlan258
+network 182.168.9.96 255.255.255.224
 default-router 182.168.9.126
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 238
-network 182.168.9.128 255.255.255.192
+----------------
+VLAN259
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.9.128	182.168.9.129 - 182.168.9.158	182.168.9.159		255.255.255.224/27
+	
+ip dhcp pool vlan260
+network 182.168.9.160 255.255.255.224
 default-router 182.168.9.190
 dns-server 8.8.8.8
+---------------
+VLAN261
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.9.192	182.168.9.193 - 182.168.9.222	182.168.9.223		255.255.255.224/27
+	
 
-ip dhcp pool vlan 239
-network 182.168.9.192 255.255.255.192
+ip dhcp pool vlan262
+network 182.168.9.224 255.255.255.224
 default-router 182.168.9.254
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 240
-network 182.168.10.0 255.255.255.192
+-------------
+VLAN263
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.10.0	182.168.10.1 - 182.168.10.30	182.168.10.31		255.255.255.224/27
+	
+ip dhcp pool vlan264
+network 182.168.10.32 255.255.255.224
 default-router 182.168.10.62
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 241
-network 182.168.10.64 255.255.255.192
+-------------
+VLAN265
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.10.64	182.168.10.65 - 182.168.10.94	182.168.10.95		255.255.255.224/27
+	
+ip dhcp pool vlan266
+network 182.168.10.96 255.255.255.224
 default-router 182.168.10.126
 dns-server 8.8.8.8
-
-ip dhcp pool vlan 242
-network 182.168.10.128 255.255.255.192
+--------------
+VLAN267
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+182.168.10.128	182.168.10.129 - 182.168.10.158	182.168.10.159		255.255.255.224/27
+	
+ip dhcp pool vlan268
+network 182.168.10.160 255.255.255.224
 default-router 182.168.10.190
 dns-server 8.8.8.8
 
-
---------VLAN CASETAS DE VENTAS -------
-ip dhcp pool vlan 243
-network 182.168.4.88 255.255.255.240
-default-router 182.168.4.102
-dns-server 8.8.8.8
 
 
 
@@ -320,30 +457,30 @@ default-router 172.168.0.30
 dns-server 8.8.8.8
 -------VLAN GERENCIA
 
-ip dhcp pool vlan 303
+ip dhcp pool vlan 301
 network 172.168.0.32 255.255.255.248
 default-router 172.168.0.38
 dns-server 8.8.8.8
 --------VLAN SECRETARIA
-ip dhcp pool vlan 304
+ip dhcp pool vlan 302
 network 172.168.0.40 255.255.255.248
 default-router 172.168.0.46
 dns-server 8.8.8.8
 
 -------VLAN VENTANILLAS
-ip dhcp pool vlan 304
+ip dhcp pool vlan 303
 network 172.168.0.48 255.255.255.240
 default-router 172.168.0.62
 dns-server 8.8.8.8
 
 
 -------VLAN BOVEDA Y ANTE-BOVEDA
-ip dhcp pool vlan 309
+ip dhcp pool vlan 304
 network 172.168.0.64 255.255.255.248
 default-router 172.168.0.70
 dns-server 8.8.8.8
 --------VLAN CAJEROS AUTOATICOS
-ip dhcp pool vlan 310
+ip dhcp pool vlan 305
 network 172.168.0.72 255.255.255.248
 default-router 172.168.0.78
 dns-server 8.8.8.8
@@ -358,77 +495,93 @@ default-router 162.168.0.14
 dns-server 8.8.8.8
 
 --------VLAN BOLETERIA
-ip dhcp pool vlan 406
+ip dhcp pool vlan 401
 network 162.168.0.16 255.255.255.248
 default-router 162.168.0.22
 dns-server 8.8.8.8
 
 --------VLAN ADMINISTRACION cine
-ip dhcp pool vlan 407
+ip dhcp pool vlan 402
 network 162.168.0.24 255.255.255.248
 default-router 162.168.0.30
 dns-server 8.8.8.8
 
 --------VLAN ESPERA Y SECRETARIA
-ip dhcp pool vlan 408
+ip dhcp pool vlan 403
 network 162.168.0.32 255.255.255.248
 default-router 162.168.0.38
 dns-server 8.8.8.8
 
 --------VLAN ADMINISTRACION Gimnasio
-ip dhcp pool vlan 409
+ip dhcp pool vlan 404
 network 162.168.0.40 255.255.255.248
 default-router 162.168.0.46
 dns-server 8.8.8.8
 
 --------VLAN ESTAR
-ip dhcp pool vlan 410
-network 162.168.0.48 255.255.255.248
-default-router 162.168.0.54
-dns-server 8.8.8.8
 
---------VLAN AREA DE MESAS--------
-ip dhcp pool vlan 411
-network 162.168.0.128 255.255.255.128
-default-router 162.168.0.254
-dns-server 8.8.8.8
+VLAN405
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(6 hosts)		162.168.0.48	162.168.0.49 - 162.168.0.54	162.168.0.55		255.255.255.248/29 
+
 
 ---------BARRA DE ATENCION
-ip dhcp pool vlan 412
+ip dhcp pool vlan 406
 network 162.168.0.56 255.255.255.248
 default-router 162.168.0.62
 dns-server 8.8.8.8
 
+
+
 --------VLAN ADMINISTRACION area de juegos
 
-ip dhcp pool vlan 413
+ip dhcp pool vlan 407
 network 162.168.0.64 255.255.255.248
 default-router 162.168.0.70
 dns-server 8.8.8.8
 
+
+--------VLAN AREA DE MESAS--------
+
+VLAN408
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+(64 hosts)		162.168.0.128	162.168.0.129 - 162.168.0.190	162.168.0.191		255.255.255.192/26
+
+VLAN409
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+
+(64 hosts)		162.168.0.192	162.168.0.193 - 162.168.0.254	162.168.0.255		255.255.255.192/26
+
+
+ip dhcp pool vlan 409
+network 162.168.0.192 255.255.255.192
+default-router 162.168.0.254
+dns-server 8.8.8.8
 
 
 --------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA (10)--------
 
 
 ip dhcp pool vlan 500
-network 152.168.0.0 255.255.255.192
-default-router 152.168.0.62
+network 152.168.0.0 255.255.255.0
+default-router 152.168.0.254
 dns-server 8.8.8.8
 
 --------VLAN PATIO DE COMIDAS--------
 
+VLAN501
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+152.168.1.0	152.168.1.1 - 152.168.1.254	152.168.1.255		255.255.255.0/24
 
-ip dhcp pool vlan 510
-network 152.168.0.64 255.255.255.0
-default-router 152.168.1.62
-dns-server 8.8.8.8
 
-
-ip dhcp pool vlan 511
-network 152.168.1.64 255.255.255.0
-default-router 152.168.2.62
-dns-server 8.8.8.8
+VLAN502
+Detalles de subred	
+NoHosts		SubnetAddress	HostAddressRange		BroadcastAddress	submask
+152.168.2.0	152.168.2.1 - 152.168.2.254	152.168.2.255		255.255.255.0/24 
 
 
 *---VLAN SALA DE MAQUINAS Y EQUIPOS--------

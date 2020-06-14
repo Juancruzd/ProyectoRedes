@@ -50,46 +50,97 @@ name vlan_zc_gc_4_tienda_de_zapatos
 vlan 223
 name vlan_zc_gc_5_tienda_de_zapatos
 vlan 224
-name vlan_zc_gc_1_tienda_de_ropa
+name vlan_zc_gc_6_tienda_de_zapatos
 vlan 225
-name vlan_zc_gc_2_tienda_de_ropa
+name vlan_zc_gc_7_tienda_de_zapatos
 vlan 226
-name vlan_zc_gc_3_tienda_de_ropa
+name vlan_zc_gc_8_tienda_de_zapatos
 vlan 227
-name vlan_zc_gc_4_tienda_de_ropa
+name vlan_zc_gc_9_tienda_de_zapatos
 vlan 228
-name vlan_zc_gc_5_tienda_de_ropa
+name vlan_zc_gc_10_tienda_de_zapatos
 vlan 229
-name vlan_zc_gc_6_tienda_de_ropa
+name vlan_zc_gc_1_tienda_de_ropa
+interface fast 0/1
+switchport mode access
+switchport access vlan 229
 vlan 230
-name vlan_zc_gc_7_tienda_de_ropa
+name vlan_zc_gc_2_tienda_de_ropa
 vlan 231
-name vlan_zc_gc_8_tienda_de_ropa
+name vlan_zc_gc_3_tienda_de_ropa
 vlan 232
-name vlan_zc_gc_9_tienda_de_ropa
+name vlan_zc_gc_4_tienda_de_ropa
 vlan 233
-name vlan_zc_gc_10_tienda_de_ropa
+name vlan_zc_gc_5_tienda_de_ropa
 vlan 234
-name vlan_zc_gc_1_tienda_generales
 vlan 235
-name vlan_zc_gc_2_tienda_generales
+name vlan_zc_gc_7_tienda_de_ropa
 vlan 236
-name vlan_zc_gc_3_tienda_generales
+name vlan_zc_gc_8_tienda_de_ropa
 vlan 237
-name vlan_zc_gc_4_tienda_generales
+name vlan_zc_gc_9_tienda_de_ropa
 vlan 238
-name vlan_zc_gc_5_tienda_generales
+name vlan_zc_gc_10_tienda_de_ropa
 vlan 239
-name vlan_zc_gc_6_tienda_generales
+name vlan_zc_gc_11_tienda_de_ropa
 vlan 240
-name vlan_zc_gc_7_tienda_generales
+name vlan_zc_gc_12_tienda_de_ropa
 vlan 241
-name vlan_zc_gc_8_tienda_generales
+name vlan_zc_gc_13_tienda_de_ropa
 vlan 242
-name vlan_zc_gc_9_tienda_generales
+name vlan_zc_gc_14_tienda_de_ropa
 vlan 243
+name vlan_zc_gc_15_tienda_de_ropa
+vlan 244
+name vlan_zc_gc_16_tienda_de_ropa
+vlan 245
+name vlan_zc_gc_17_tienda_de_ropa
+vlan 246
+name vlan_zc_gc_18_tienda_de_ropa
+vlan 247
+name vlan_zc_gc_19_tienda_de_ropa
+vlan 248
+name vlan_zc_gc_20_tienda_de_ropa
+vlan 249
+name vlan_zc_gc_1_tienda_generales
+vlan 250
+name vlan_zc_gc_2_tienda_generales
+vlan 251
+name vlan_zc_gc_3_tienda_generales
+vlan 252
+name vlan_zc_gc_4_tienda_generales
+vlan 253
+name vlan_zc_gc_5_tienda_generales
+vlan 254
+name vlan_zc_gc_6_tienda_generales
+vlan 255
+name vlan_zc_gc_7_tienda_generales
+vlan 256
+name vlan_zc_gc_8_tienda_generales
+vlan 257
+name vlan_zc_gc_9_tienda_generales
+vlan 258
 name vlan_zc_gc_10_tienda_generales
-
+vlan 259
+name vlan_zc_gc_11_tienda_generales
+vlan 260
+name vlan_zc_gc_12_tienda_generales
+vlan 261
+name vlan_zc_gc_13_tienda_generales
+vlan 262
+name vlan_zc_gc_14_tienda_generales
+vlan 263
+name vlan_zc_gc_15_tienda_generales
+vlan 264
+name vlan_zc_gc_16_tienda_generales
+vlan 265
+name vlan_zc_gc_17_tienda_generales
+vlan 266
+name vlan_zc_gc_18_tienda_generales
+vlan 267
+name vlan_zc_gc_19_tienda_generales
+vlan 268
+name vlan_zc_gc_20_tienda_generales
 
 *********************************************************
 -----------VLAN ZONA COMERCIAL-----------
@@ -249,7 +300,7 @@ switchport access vlan 218
 
 -----------GALERIAS COMERCIAL-----------
 
---------VLAN TIENDAS DE ZAPATOS (5)--------
+--------VLAN TIENDAS DE ZAPATOS (5) ---------
 vlan 219
 name vlan_zc_gc_1_tienda_de_zapatos
 interface fast 0/11
@@ -280,132 +331,286 @@ interface fast 0/15
 switchport mode access
 switchport access vlan 223
 
+vlan 224
+name vlan_zc_gc_6_tienda_de_zapatos
+interface fast 0/16
+switchport mode access
+switchport access vlan 224
+
+vlan 225
+name vlan_zc_gc_7_tienda_de_zapatos
+interface fast 0/17
+switchport mode access
+switchport access vlan 225
+
+vlan 226
+name vlan_zc_gc_8_tienda_de_zapatos
+interface fast 0/18
+switchport mode access
+switchport access vlan 226
+
+vlan 227
+name vlan_zc_gc_9_tienda_de_zapatos
+interface fast 0/19
+switchport mode access
+switchport access vlan 227
+
+vlan 228
+name vlan_zc_gc_10_tienda_de_zapatos
+interface fast 0/20
+switchport mode access
+switchport access vlan 228
+
 
 
 **********************CUARTO SWITCH**********************
 *********************************************************
 
 --------VLAN TIENDAS DE ROPA (10)--------
-vlan 224
+vlan 229
 name vlan_zc_gc_1_tienda_de_ropa
 interface fast 0/1
-switchport mode access
-switchport access vlan 224
-
-vlan 225
-name vlan_zc_gc_2_tienda_de_ropa
-interface fast 0/2
-switchport mode access
-switchport access vlan 225
-
-vlan 226
-name vlan_zc_gc_3_tienda_de_ropa
-interface fast 0/3
-switchport mode access
-switchport access vlan 226
-
-vlan 227
-name vlan_zc_gc_4_tienda_de_ropa
-interface fast 0/4
-switchport mode access
-switchport access vlan 227
-
-vlan 228
-name vlan_zc_gc_5_tienda_de_ropa
-interface fast 0/5
-switchport mode access
-switchport access vlan 228
-
-vlan 229
-name vlan_zc_gc_6_tienda_de_ropa
-interface fast 0/6
 switchport mode access
 switchport access vlan 229
 
 vlan 230
-name vlan_zc_gc_7_tienda_de_ropa
-interface fast 0/7
+name vlan_zc_gc_2_tienda_de_ropa
+interface fast 0/2
 switchport mode access
 switchport access vlan 230
 
 vlan 231
-name vlan_zc_gc_8_tienda_de_ropa
-interface fast 0/8
+name vlan_zc_gc_3_tienda_de_ropa
+interface fast 0/3
 switchport mode access
 switchport access vlan 231
 
 vlan 232
-name vlan_zc_gc_9_tienda_de_ropa
-interface fast 0/9
+name vlan_zc_gc_4_tienda_de_ropa
+interface fast 0/4
 switchport mode access
 switchport access vlan 232
 
 vlan 233
-name vlan_zc_gc_10_tienda_de_ropa
-interface fast 0/10
+name vlan_zc_gc_5_tienda_de_ropa
+interface fast 0/5
 switchport mode access
 switchport access vlan 233
 
-
---------VLAN TIENDAS GENERALES (10)--------
 vlan 234
-name vlan_zc_gc_1_tienda_generales
-interface fast 0/11
+name vlan_zc_gc_6_tienda_de_ropa
+interface fast 0/6
 switchport mode access
 switchport access vlan 234
 
 vlan 235
-name vlan_zc_gc_2_tienda_generales
-interface fast 0/12
+name vlan_zc_gc_7_tienda_de_ropa
+interface fast 0/7
 switchport mode access
 switchport access vlan 235
 
 vlan 236
-name vlan_zc_gc_3_tienda_generales
-interface fast 0/13
+name vlan_zc_gc_8_tienda_de_ropa
+interface fast 0/8
 switchport mode access
 switchport access vlan 236
 
 vlan 237
-name vlan_zc_gc_4_tienda_generales
-interface fast 0/14
+name vlan_zc_gc_9_tienda_de_ropa
+interface fast 0/9
 switchport mode access
 switchport access vlan 237
 
 vlan 238
-name vlan_zc_gc_5_tienda_generales
-interface fast 0/15
+name vlan_zc_gc_10_tienda_de_ropa
+interface fast 0/10
 switchport mode access
 switchport access vlan 238
 
 vlan 239
-name vlan_zc_gc_6_tienda_generales
-interface fast 0/16
+name vlan_zc_gc_11_tienda_de_ropa
+interface fast 0/11
 switchport mode access
 switchport access vlan 239
 
 vlan 240
-name vlan_zc_gc_7_tienda_generales
-interface fast 0/17
+name vlan_zc_gc_12_tienda_de_ropa
+interface fast 0/12
 switchport mode access
 switchport access vlan 240
 
 vlan 241
-name vlan_zc_gc_8_tienda_generales
-interface fast 0/18
+name vlan_zc_gc_13_tienda_de_ropa
+interface fast 0/13
 switchport mode access
 switchport access vlan 241
 
 vlan 242
-name vlan_zc_gc_9_tienda_generales
-interface fast 0/19
+name vlan_zc_gc_14_tienda_de_ropa
+interface fast 0/14
 switchport mode access
 switchport access vlan 242
 
 vlan 243
-name vlan_zc_gc_10_tienda_generales
-interface fast 0/20
+name vlan_zc_gc_15_tienda_de_ropa
+interface fast 0/15
 switchport mode access
 switchport access vlan 243
+
+vlan 244
+name vlan_zc_gc_16_tienda_de_ropa
+interface fast 0/16
+switchport mode access
+switchport access vlan 244
+
+vlan 245
+name vlan_zc_gc_17_tienda_de_ropa
+interface fast 0/17
+switchport mode access
+switchport access vlan 245
+
+vlan 246
+name vlan_zc_gc_18_tienda_de_ropa
+interface fast 0/18
+switchport mode access
+switchport access vlan 246
+
+vlan 247
+name vlan_zc_gc_19_tienda_de_ropa
+interface fast 0/19
+switchport mode access
+switchport access vlan 247
+
+vlan 248
+name vlan_zc_gc_20_tienda_de_ropa
+interface fast 0/20
+switchport mode access
+switchport access vlan 248
+
+
+
+**********************QUINTO SWITCH**********************
+*********************************************************
+
+--------VLAN TIENDAS GENERALES (10)--------
+vlan 249
+name vlan_zc_gc_1_tienda_generales
+interface fast 0/1
+switchport mode access
+switchport access vlan 249
+
+vlan 250
+name vlan_zc_gc_2_tienda_generales
+interface fast 0/2
+switchport mode access
+switchport access vlan 250
+
+vlan 251
+name vlan_zc_gc_3_tienda_generales
+interface fast 0/3
+switchport mode access
+switchport access vlan 251
+
+vlan 252
+name vlan_zc_gc_4_tienda_generales
+interface fast 0/4
+switchport mode access
+switchport access vlan 252
+
+vlan 253
+name vlan_zc_gc_5_tienda_generales
+interface fast 0/5
+switchport mode access
+switchport access vlan 253
+
+vlan 254
+name vlan_zc_gc_6_tienda_generales
+interface fast 0/6
+switchport mode access
+switchport access vlan 254
+
+vlan 255
+name vlan_zc_gc_7_tienda_generales
+interface fast 0/7
+switchport mode access
+switchport access vlan 255
+
+vlan 256
+name vlan_zc_gc_8_tienda_generales
+interface fast 0/8
+switchport mode access
+switchport access vlan 256
+
+vlan 257
+name vlan_zc_gc_9_tienda_generales
+interface fast 0/9
+switchport mode access
+switchport access vlan 257
+
+vlan 258
+name vlan_zc_gc_10_tienda_generales
+interface fast 0/10
+switchport mode access
+switchport access vlan 258
+
+vlan 259
+name vlan_zc_gc_11_tienda_generales
+interface fast 0/11
+switchport mode access
+switchport access vlan 259
+
+vlan 260
+name vlan_zc_gc_12_tienda_generales
+interface fast 0/12
+switchport mode access
+switchport access vlan 260
+
+vlan 261
+name vlan_zc_gc_13_tienda_generales
+interface fast 0/13
+switchport mode access
+switchport access vlan 261
+
+vlan 262
+name vlan_zc_gc_14_tienda_generales
+interface fast 0/14
+switchport mode access
+switchport access vlan 262
+
+vlan 263
+name vlan_zc_gc_15_tienda_generales
+interface fast 0/15
+switchport mode access
+switchport access vlan 263
+
+vlan 264
+name vlan_zc_gc_16_tienda_generales
+interface fast 0/16
+switchport mode access
+switchport access vlan 264
+
+vlan 265
+name vlan_zc_gc_17_tienda_generales
+interface fast 0/17
+switchport mode access
+switchport access vlan 265
+
+vlan 266
+name vlan_zc_gc_18_tienda_generales
+interface fast 0/18
+switchport mode access
+switchport access vlan 266
+
+vlan 267
+name vlan_zc_gc_19_tienda_generales
+interface fast 0/19
+switchport mode access
+switchport access vlan 267
+
+vlan 268
+name vlan_zc_gc_20_tienda_generales
+interface fast 0/20
+switchport mode access
+switchport access vlan 268
 
 

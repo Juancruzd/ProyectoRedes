@@ -1,0 +1,369 @@
+----- Oficina de gerencia
+ip dhcp excluded-address 192.168.0.0
+ip dhcp excluded-address 192.168.0.7
+
+--- Contibilidad
+ip dhcp excluded-address 192.168.0.8
+ip dhcp excluded-address 192.168.0.15
+
+--- Marketing
+ip dhcp excluded-address 192.168.0.16
+ip dhcp excluded-address 192.168.0.23
+
+----Secretaria
+ip dhcp excluded-address 192.168.0.24
+ip dhcp excluded-address 192.168.0.31
+
+---Sala de juntas
+ip dhcp excluded-address 192.168.0.40
+ip dhcp excluded-address 192.168.0.47 
+
+
+--Sala de espera 
+ip dhcp excluded-address 192.168.0.48
+ip dhcp excluded-address 192.168.0.55
+
+--*Cuarto de seguridad y monitoreo
+ip dhcp excluded-address 192.168.0.56
+ip dhcp excluded-address 192.168.0.63
+
+--*Departamento de redes
+ip dhcp excluded-address 192.168.0.64
+ip dhcp excluded-address 192.168.0.71
+
+
+----Departamento de servidores
+
+ip dhcp excluded-address 192.168.0.72
+ip dhcp excluded-address 192.168.0.79
+
+---servers(3 requeridos dns,http,https)
+
+ip dhcp excluded-address 192.168.0.80
+ip dhcp excluded-address 192.168.0.87
+
+
+
+******************************************
+-------------      ZONA 2  ---------------
+******************************************
+
+--*Caja	2 hosts 208
+
+ip dhcp excluded-address 182.168.4.0
+ip dhcp excluded-address 182.168.4.7
+
+--Administracion + SS.HH 3 hosts 209
+
+ip dhcp excluded-address 182.168.4.8
+ip dhcp excluded-address 182.168.4.15
+
+--------VLAN SECRETARIA Y ARCHIVO 210-
+
+ip dhcp excluded-address 182.168.4.16 
+ip dhcp excluded-address 182.168.4.23
+
+--------VLAN OFICINA DE CONTABILIDAD 211
+
+ip dhcp excluded-address 182.168.4.24 
+ip dhcp excluded-address 182.168.4.31
+
+--------VLAN OFICINA DE JEFE DE VENTAS 212-
+ip dhcp excluded-address 182.168.4.32
+ip dhcp excluded-address 182.168.4.39
+
+
+--------VLAN OFICINA DE PERSONAL 213------
+
+ip dhcp excluded-address 182.168.4.40
+ip dhcp excluded-address 182.168.4.47
+
+--------VLAN SALA DE REUNIONES 214-----
+ip dhcp excluded-address 182.168.4.48
+ip dhcp excluded-address 182.168.4.63
+
+--------VLAN CUARTO DE CONTROL TV 215---
+ip dhcp excluded-address 182.168.4.64
+ip dhcp excluded-address 182.168.4.71
+
+
+--------VLAN CAJA 216--------
+ip dhcp excluded-address 182.168.4.72
+ip dhcp excluded-address 1182.168.4.79
+
+
+--------VLAN AREA ADMINISTRATIVA 217--
+
+ip dhcp excluded-address 182.168.4.80
+ip dhcp excluded-address 182.168.4.87
+
+
+--------VLAN CASETAS DE VENTAS 218---
+
+ip dhcp excluded-address 182.168.4.88 
+ip dhcp excluded-address 182.168.4.103
+
+--------VLAN TIENDAS DE ZAPATOS (5) 
+--------VLAN 219
+ip dhcp excluded-address 182.168.4.160
+ip dhcp excluded-address 182.168.4.191
+ip dhcp excluded-address 182.168.4.128 182.168.4.159
+
+--------VLAN 220
+ip dhcp excluded-address 182.168.4.224
+ip dhcp excluded-address 182.168.4.255
+ip dhcp excluded-address 182.168.4.192 182.168.4.223
+
+-------VLAN 221
+ip dhcp excluded-address 182.168.5.32
+ip dhcp excluded-address 182.168.5.63
+ip dhcp excluded-address 182.168.5.0  182.168.5.31
+
+
+-------VLAN 222
+ip dhcp excluded-address 182.168.5.96
+ip dhcp excluded-address 182.168.5.127
+ip dhcp excluded-address 182.168.5.64  182.168.5.95
+
+
+-------VLAN 223
+ip dhcp excluded-address 182.168.5.160
+ip dhcp excluded-address 182.168.5.191
+ip dhcp excluded-address 182.168.5.128 182.168.5.159
+
+--------VLAN TIENDAS DE ROPA (10)--------
+-------VLAN 224
+ip dhcp excluded-address 182.168.5.224
+ip dhcp excluded-address 182.168.5.255
+ip dhcp excluded-address 182.168.5.192 182.168.5.223
+-------VLAN 225
+ip dhcp excluded-address 182.168.6.32
+ip dhcp excluded-address 182.168.6.63
+ip dhcp excluded-address 182.168.6.0 182.168.6.31
+-------VLAN 226
+ip dhcp excluded-address 182.168.6.96
+ip dhcp excluded-address 182.168.6.127
+ip dhcp excluded-address 182.168.6.64 182.168.6.95
+
+-------VLAN 227
+ip dhcp excluded-address 182.168.6.160
+ip dhcp excluded-address 182.168.6.191
+ip dhcp excluded-address 182.168.6.128 182.168.6.159
+
+-------VLAN 228
+ip dhcp excluded-address 182.168.6.224
+ip dhcp excluded-address 182.168.6.255
+ip dhcp excluded-address 182.168.6.192 182.168.6.223
+
+-------VLAN 229
+ip dhcp excluded-address 182.168.7.32
+ip dhcp excluded-address 182.168.7.63
+ip dhcp excluded-address 182.168.7.0 182.168.7.31
+
+-------VLAN 230
+
+ip dhcp excluded-address 182.168.7.96
+ip dhcp excluded-address 182.168.7.127
+ip dhcp excluded-address 182.168.7.64 182.168.7.95
+
+-------VLAN 231
+ip dhcp excluded-address 182.168.7.160
+ip dhcp excluded-address 182.168.7.191
+ip dhcp excluded-address 182.168.7.128 182.168.7.159
+
+-------VLAN 232
+ip dhcp excluded-address 182.168.7.224
+ip dhcp excluded-address 182.168.7.255
+ip dhcp excluded-address 182.168.7.192 182.168.7.223
+
+-------VLAN 233
+ip dhcp excluded-address 182.168.8.32
+ip dhcp excluded-address 182.168.8.63
+ip dhcp excluded-address 182.168.8.0 182.168.8.31
+
+
+--------VLAN TIENDAS DE ROPA (10)--------
+-------VLAN 234
+ip dhcp excluded-address 182.168.8.96
+ip dhcp excluded-address 182.168.8.127
+ip dhcp excluded-address 182.168.8.64 182.168.8.95
+
+-------VLAN 235
+
+ip dhcp excluded-address 182.168.8.160
+ip dhcp excluded-address 182.168.8.191
+ip dhcp excluded-address 182.168.8.128 182.168.8.159
+
+-------VLAN 236
+ip dhcp excluded-address 182.168.8.224
+ip dhcp excluded-address 182.168.8.255
+ip dhcp excluded-address 182.168.8.192 182.168.8.223
+
+-------VLAN 237
+ip dhcp excluded-address 182.168.9.32
+ip dhcp excluded-address 182.168.9.63
+ip dhcp excluded-address 182.168.9.0 182.168.9.31
+
+-------VLAN 238
+ip dhcp excluded-address 182.168.9.96
+ip dhcp excluded-address 182.168.9.127
+ip dhcp excluded-address 182.168.9.64 182.168.9.95
+
+-------VLAN 239
+ip dhcp excluded-address 182.168.9.160
+ip dhcp excluded-address 182.168.9.191
+ip dhcp excluded-address 182.168.9.128 182.168.9.159
+
+-------VLAN 240
+ip dhcp excluded-address 182.168.9.224
+ip dhcp excluded-address 182.168.9.255
+ip dhcp excluded-address 182.168.9.192 182.168.9.223
+
+-------VLAN 241
+ip dhcp excluded-address 182.168.10.32
+ip dhcp excluded-address 182.168.10.63
+ip dhcp excluded-address 182.168.10.0 182.168.10.31
+
+-------VLAN 242
+ip dhcp excluded-address 182.168.10.96
+ip dhcp excluded-address 182.168.10.127	
+ip dhcp excluded-address 182.168.10.64 182.168.10.95
+
+
+-------VLAN 243
+ip dhcp excluded-address 182.168.10.160
+ip dhcp excluded-address 182.168.10.191
+ip dhcp excluded-address 182.168.10.128 182.168.10.159
+
+**
+--------ROUTER 3----------------------
+*************************************
+
+---------VLAN AGENCIAS BANCARIAS
+ip dhcp excluded-address 172.168.0.0 
+ip dhcp excluded-address 172.168.0.31
+
+
+---------VLAN GERENCIA
+
+ip dhcp excluded-address  172.168.0.32
+ip dhcp excluded-address 172.168.0.39
+
+---------VLAN SECRETARIA
+
+ip dhcp excluded-address  172.168.0.40
+ip dhcp excluded-address 172.168.0.47
+
+---------VLAN SECRETARIA
+
+ip dhcp excluded-address 172.168.0.48
+ip dhcp excluded-address 172.168.0.63
+
+---------VLAN BOVEDA Y ANTE-BOVEDA
+
+ip dhcp excluded-address 172.168.0.64
+ip dhcp excluded-address 172.168.0.71
+
+---------VLAN CAJEROS AUTOATICOS
+
+ip dhcp excluded-address 172.168.0.72
+ip dhcp excluded-address 172.168.0.79
+
+
+
+
+*************************************
+--------ROUTER 4----------------------
+*************************************
+---------Cabinas 400
+ip dhcp excluded-address 162.168.0.0
+ip dhcp excluded-address 162.168.0.15
+
+---------Boleteria vlan 401
+ip dhcp excluded-address 162.168.0.16
+ip dhcp excluded-address 162.168.0.23
+
+--------VLAN ADMINISTRACION--------402
+
+ip dhcp excluded-address 162.168.0.24
+ip dhcp excluded-address 162.168.0.31
+
+--------VLAN ESPERA Y SECRETARIA--------vlan 403
+ip dhcp excluded-address 162.168.0.32
+ip dhcp excluded-address 162.168.0.39
+
+--------VLAN ADMINISTRACION GIM--------404
+ip dhcp excluded-address 162.168.0.40
+ip dhcp excluded-address 162.168.0.47
+
+--------VLAN ESTAR-------WIFI SOLO
+
+--------VLAN BARRA DE ATENCION--------406
+ip dhcp excluded-address 162.168.0.48
+ip dhcp excluded-address 162.168.0.55
+
+--------VLAN ADMINISTRACION--------407
+ip dhcp excluded-address 162.168.0.64
+ip dhcp excluded-address 162.168.0.71
+
+--------VLAN AREA DE MESAS--------408 WIFI
+--------VLAN AREA DE MESAS--------409 WIFI
+
+
+*************************************
+--------ROUTER 5----------------------
+*************************************
+
+--------VLAN AREA DE MESAS--------500
+
+ip dhcp excluded-address 152.168.0.0
+ip dhcp excluded-address 152.168.0.63
+
+--------*Patio de comida --------WIFI  501
+
+--------*Patio de comida--------WIFI 502
+
+
+*************************************
+--------ROUTER 6----------------------
+*************************************
+
+----VLAN SALA DE MAQUINAS Y EQUIPOS 600
+
+ip dhcp excluded-address 142.168.0.0
+ip dhcp excluded-address 132.168.0.15
+
+
+*************************************
+--------ROUTER 6----------------------
+*************************************
+----VLAN CASETA DE CONTROL 700
+
+ip dhcp excluded-address 142.168.0.0
+ip dhcp excluded-address 142.168.0.15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

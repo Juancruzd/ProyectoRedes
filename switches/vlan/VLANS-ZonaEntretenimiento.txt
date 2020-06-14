@@ -1,3 +1,27 @@
+CREACIÓN DE VLANS
+*********************************************************
+vlan 400
+name vlan_ze_c_1_cabina
+vlan 401
+name vlan_ze_c_boleteria
+vlan 402
+name vlan_ze_c_administracion
+vlan 403
+name vlan_ze_c_espera_y_secretaria
+vlan 404
+name vlan_ze_g_administracion
+vlan 405
+name vlan_ze_g_estar
+vlan 406
+name vlan_ze_adj_barra_de_atencion
+vlan 407
+name vlan_ze_adj_administracion
+vlan 408
+name vlan_ze_db_1_area_de_mesas
+vlan 409
+name vlan_ze_db_2_area_de_mesas
+
+*********************************************************
 -----------VLAN ZONA ENTRETENIMIENTO-----------
 -----------CINE-----------
 

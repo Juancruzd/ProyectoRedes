@@ -2,18 +2,21 @@ R1
 ------------------------------- 
 Router eigrp 20
  network 10.10.0.0 0.0.0.255
+
  network 192.168.0.0 0.0.0.7
  network 192.168.0.8 0.0.0.7
  network 192.168.0.16 0.0.0.7
  network 192.168.0.24 0.0.0.7 
- network 192.168.0.32 0.0.0.15
+
+network 192.168.0.32 0.0.0.7
+network 192.168.0.40 0.0.0.7
+ 
  network 192.168.0.48 0.0.0.7
  network 192.168.0.56 0.0.0.7
  network 192.168.0.64 0.0.0.7
  network 192.168.0.72 0.0.0.7
  network 192.168.0.80 0.0.0.7 
- no auto-summary
-Router eigrp 20
+ no auto-summary 
  passive-interface fastethernet 0/0.100
  passive-interface fastethernet 0/0.101
  passive-interface fastethernet 0/0.102
@@ -24,7 +27,7 @@ Router eigrp 20
  passive-interface fastethernet 0/0.107
  passive-interface fastethernet 0/0.108
  passive-interface fastethernet 0/0.109 
- 
+ passive-interface fastethernet 0/0.110
 
 ------------------------------- 
 R2
@@ -40,6 +43,8 @@ R2
  network 182.168.2.128 0.0.0.127
  network 182.168.3.0 0.0.0.127
  network 182.168.3.128 0.0.0.127
+
+
  network 182.168.4.0 0.0.0.7
  network 182.168.4.8 0.0.0.7
  network 182.168.4.16 0.0.0.7
@@ -49,33 +54,83 @@ R2
  network 182.168.4.48 0.0.0.15
  network 182.168.4.64 0.0.0.7
  network 182.168.4.72 0.0.0.7
- network 182.168.4.80 0.0.0.7 
- network 182.168.4.88 0.0.0.15
- network 182.168.4.128 0.0.0.63  
- network 182.168.4.192 0.0.0.63  
- network 182.168.5.0 0.0.0.63 
- network 182.168.5.64 0.0.0.63
- network 182.168.5.128 0.0.0.63  
- network 182.168.5.192 0.0.0.63  
- network 182.168.6.0 0.0.0.63 
- network 182.168.6.64 0.0.0.63 
- network 182.168.6.128 0.0.0.63  
- network 182.168.6.192 0.0.0.63  
- network 182.168.7.0 0.0.0.63
- network 182.168.7.64 0.0.0.63  
- network 182.168.7.128 0.0.0.63  
- network 182.168.7.192 0.0.0.63 
- network 182.168.8.0 0.0.0.63
- network 182.168.8.64 0.0.0.63 
- network 182.168.8.128 0.0.0.63 
- network 182.168.8.192 0.0.0.63  
- network 182.168.9.0 0.0.0.63
- network 182.168.9.64 0.0.0.63 
- network 182.168.9.128 0.0.0.63  
- network 182.168.9.192 0.0.0.63 
- network 182.168.10.0 0.0.0.63 
- network 182.168.10.64 0.0.0.63
- network 182.168.10.128 0.0.0.63  
+ network 182.168.4.80 0.0.0.7  
+ network 182.168.4.88 0.0.0.7
+
+ network 182.168.4.128 0.0.0.31  
+ network 182.168.4.160 0.0.0.31  
+
+ network 182.168.4.192 0.0.0.31 
+ network 182.168.4.224 0.0.0.31  
+
+ network 182.168.5.0 0.0.0.31
+network 182.168.5.32 0.0.0.31
+
+ network 182.168.5.64 0.0.0.31
+network 182.168.5.96 0.0.0.31
+
+ network 182.168.5.128 0.0.0.31
+network 182.168.5.160 0.0.0.31
+ 
+ network 182.168.5.192 0.0.0.31
+ network 182.168.5.224 0.0.0.31 
+ 
+ network 182.168.6.0 0.0.0.31
+network 182.168.6.32 0.0.0.31 
+
+ network 182.168.6.64 0.0.0.31
+network 182.168.6.96 0.0.0.31
+
+ network 182.168.6.128 0.0.0.31 
+network 182.168.6.160 0.0.0.31
+ 
+ network 182.168.6.192 0.0.0.31
+network 182.168.6.224 0.0.0.31
+ 
+ network 182.168.7.0 0.0.0.31
+network 182.168.7.32 0.0.0.31
+
+ network 182.168.7.64 0.0.0.31
+network 182.168.7.96 0.0.0.31
+  
+ network 182.168.7.128 0.0.0.31
+network 182.168.7.160 0.0.0.31
+ 
+ network 182.168.7.192 0.0.0.63
+network 182.168.7.224 0.0.0.63
+ 
+ network 182.168.8.0 0.0.0.31
+network 182.168.8.32 0.0.0.31
+
+ network 182.168.8.64 0.0.0.31
+network 182.168.8.96 0.0.0.31
+ 
+ network 182.168.8.128 0.0.0.31
+network 182.168.8.160 0.0.0.31
+
+ network 182.168.8.192 0.0.0.31 
+network 182.168.8.224 0.0.0.31 
+
+ network 182.168.9.0 0.0.0.31
+network 182.168.9.32 0.0.0.31
+
+ network 182.168.9.64 0.0.0.31
+network 182.168.9.96 0.0.0.31
+ 
+ network 182.168.9.128 0.0.0.31 
+network 182.168.9.160 0.0.0.31 
+
+ network 182.168.9.192 0.0.0.31
+network 182.168.9.224 0.0.0.31
+
+ network 182.168.10.0 0.0.0.31
+network 182.168.10.32 0.0.0.31
+
+ network 182.168.10.64 0.0.0.31
+network 182.168.10.96 0.0.0.31
+
+ network 182.168.10.128 0.0.0.31 
+ network 182.168.10.160 0.0.0.31  
  no auto-summary
 Router eigrp 20
  passive-interface fastethernet 0/0.200
@@ -97,6 +152,7 @@ Router eigrp 20
  passive-interface fastethernet 0/0.216
  passive-interface fastethernet 0/0.217
  passive-interface fastethernet 0/0.218
+
  passive-interface fastethernet 0/0.219
  passive-interface fastethernet 0/0.220
  passive-interface fastethernet 0/0.221
@@ -123,6 +179,31 @@ Router eigrp 20
  passive-interface fastethernet 0/0.242
  passive-interface fastethernet 0/0.243
 
+ passive-interface fastethernet 0/0.244
+ passive-interface fastethernet 0/0.245
+ passive-interface fastethernet 0/0.246
+ passive-interface fastethernet 0/0.247
+ passive-interface fastethernet 0/0.248
+ passive-interface fastethernet 0/0.249
+ passive-interface fastethernet 0/0.250
+ passive-interface fastethernet 0/0.251
+ passive-interface fastethernet 0/0.252
+ passive-interface fastethernet 0/0.253
+ passive-interface fastethernet 0/0.254
+ passive-interface fastethernet 0/0.255
+ passive-interface fastethernet 0/0.256
+ passive-interface fastethernet 0/0.257
+ passive-interface fastethernet 0/0.258
+ passive-interface fastethernet 0/0.259
+ passive-interface fastethernet 0/0.260
+ passive-interface fastethernet 0/0.261
+ passive-interface fastethernet 0/0.262
+ passive-interface fastethernet 0/0.263
+ passive-interface fastethernet 0/0.264
+ passive-interface fastethernet 0/0.265
+ passive-interface fastethernet 0/0.266
+ passive-interface fastethernet 0/0.267
+ passive-interface fastethernet 0/0.268
 ------------------------------- 
 R3
  Router eigrp 20
@@ -173,9 +254,9 @@ R5
  Router eigrp 20
  network 13.13.0.0 0.0.0.255
 network 14.14.0.0 0.0.0.255 
+ network 152.168.0.0 0.0.0.255
  network 152.168.1.0 0.0.0.255
- network 152.168.2.0 0.0.0.255
- network 152.168.3.0 0.0.0.255 
+ network 152.168.2.0 0.0.0.255 
  no auto-summary
  passive-interface fastethernet 0/0.500
  passive-interface fastethernet 0/0.501

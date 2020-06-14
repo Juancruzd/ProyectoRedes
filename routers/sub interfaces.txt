@@ -26,37 +26,43 @@ exit
 
 interface fastethernet 0/0.104
 encapsulation dot1Q 104
-ip address 192.168.0.46 255.255.255.240 
+ip address 192.168.0.38 255.255.255.248
 no shutdown
 exit
-
 
 interface fastethernet 0/0.105
 encapsulation dot1Q 105
-ip address 192.168.0.54 255.255.255.248 
+ip address 192.168.0.46 255.255.255.248
 no shutdown
 exit
 
+
 interface fastethernet 0/0.106
 encapsulation dot1Q 106
-ip address 192.168.0.62 255.255.255.248 
+ip address 192.168.0.54 255.255.255.248 
 no shutdown
 exit
 
 interface fastethernet 0/0.107
 encapsulation dot1Q 107
-ip address 192.168.0.70 255.255.255.248
+ip address 192.168.0.62 255.255.255.248 
 no shutdown
 exit
 
 interface fastethernet 0/0.108
 encapsulation dot1Q 108
+ip address 192.168.0.70 255.255.255.248
+no shutdown
+exit
+
+interface fastethernet 0/0.109
+encapsulation dot1Q 109
 ip address 192.168.0.78 255.255.255.248
 no shutdown
 exit
 
-interface fastethernet 0/0.109 
-encapsulation dot1Q 109
+interface fastethernet 0/0.110
+encapsulation dot1Q 110
 ip address 192.168.0.86 255.255.255.248
 no shutdown
 exit
@@ -177,155 +183,293 @@ exit
 encapsulation dot1Q 218
 ip address 182.168.4.102 255.255.255.240
 no shutdown
-exit
-
+exit 
  interface fastethernet 0/0.219
 encapsulation dot1Q 219
-ip address 182.168.4.190 255.255.255.192
+ip address 182.168.4.158 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.220
+encapsulation dot1Q 220
+ip address 182.168.4.190 255.255.255.224
 no shutdown
 exit
 
- interface fastethernet 0/0.220
-encapsulation dot1Q 220
-ip address 182.168.4.254 255.255.255.192
-no shutdown
-exit
 
  interface fastethernet 0/0.221
 encapsulation dot1Q 221
-ip address 182.168.5.62 255.255.255.192 
+ip address 182.168.4.222 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.222
+encapsulation dot1Q 222
+ip address 182.168.4.254 255.255.255.224
 no shutdown
 exit
 
- interface fastethernet 0/0.222
-encapsulation dot1Q 222
-ip address 182.168.5.126 255.255.255.192 
-no shutdown
-exit
 
  interface fastethernet 0/0.223
 encapsulation dot1Q 223
-ip address 182.168.5.190 255.255.255.192 
+ip address 182.168.5.30 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.224
+encapsulation dot1Q 224
+ip address 182.168.5.62 255.255.255.224 
 no shutdown
 exit
 
- interface fastethernet 0/0.224
-encapsulation dot1Q 224
-ip address 182.168.5.254 255.255.255.192 
-no shutdown
-exit
 
  interface fastethernet 0/0.225
 encapsulation dot1Q 225
-ip address 182.168.6.62 255.255.255.192
+ip address 182.168.5.94 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.226
+encapsulation dot1Q 226
+ip address 182.168.5.126 255.255.255.224 
 no shutdown
 exit
 
- interface fastethernet 0/0.226
-encapsulation dot1Q 226
-ip address 182.168.6.126 255.255.255.192 
-no shutdown
-exit
+
+
 
  interface fastethernet 0/0.227
 encapsulation dot1Q 227
-ip address 182.168.6.190 255.255.255.192
+ip address 182.168.5.158 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.228
+encapsulation dot1Q 228
+ip address 182.168.5.190 255.255.255.224  
 no shutdown
 exit
 
- interface fastethernet 0/0.228
-encapsulation dot1Q 228
-ip address 182.168.6.254 255.255.255.192
-no shutdown
-exit
 
  interface fastethernet 0/0.229
 encapsulation dot1Q 229
-ip address 182.168.7.62 255.255.255.192 
+ip address 182.168.5.222 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.230
+encapsulation dot1Q 230
+ip address 182.168.5.254 255.255.255.224
 no shutdown
 exit
 
- interface fastethernet 0/0.230
-encapsulation dot1Q 230
-ip address 182.168.7.126 255.255.255.192 
-no shutdown
-exit
 
  interface fastethernet 0/0.231
 encapsulation dot1Q 231
-ip address 182.168.7.190 255.255.255.192 
+ip address 182.168.6.30 255.255.255.224
 no shutdown
 exit
-
  interface fastethernet 0/0.232
 encapsulation dot1Q 232
-ip address 182.168.7.254 255.255.255.192  
+ip address 182.168.6.62 255.255.255.224
 no shutdown
 exit
 
  interface fastethernet 0/0.233
 encapsulation dot1Q 233
-ip address 182.168.8.62 255.255.255.192  
+ip address 182.168.6.94 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.234
+encapsulation dot1Q 234
+ip address 182.168.6.126 255.255.255.224
 no shutdown
 exit
 
- interface fastethernet 0/0.234
-encapsulation dot1Q 234
-ip address 182.168.8.126 255.255.255.192 
-no shutdown
-exit
 
  interface fastethernet 0/0.235
 encapsulation dot1Q 235
-ip address 182.168.8.190 255.255.255.192 
+ip address 182.168.6.158 255.255.255.224
 no shutdown
 exit
-
  interface fastethernet 0/0.236
 encapsulation dot1Q 236
-ip address 182.168.8.254 255.255.255.192 
+ip address 182.168.6.190 255.255.255.224
 no shutdown
 exit
 
  interface fastethernet 0/0.237
 encapsulation dot1Q 237
-ip address 182.168.9.62 255.255.255.192 
+ip address 182.168.6.222 255.255.255.224
 no shutdown
 exit
-
  interface fastethernet 0/0.238
 encapsulation dot1Q 238
-ip address 182.168.9.126 255.255.255.192
+ip address 182.168.6.254 255.255.255.224
 no shutdown
 exit
 
  interface fastethernet 0/0.239
 encapsulation dot1Q 239
-ip address 182.168.9.190 255.255.255.192 
+ip address 182.168.7.30 255.255.255.224 
 no shutdown
 exit
-
  interface fastethernet 0/0.240
 encapsulation dot1Q 240
-ip address 182.168.9.254 255.255.255.192
+ip address 182.168.7.62 255.255.255.224 
 no shutdown
 exit
 
  interface fastethernet 0/0.241
 encapsulation dot1Q 241
-ip address 182.168.10.62 255.255.255.192 
+ip address 182.168.7.94 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.242
+encapsulation dot1Q 242
+ip address 182.168.7.126 255.255.255.224 
 no shutdown
 exit
 
- interface fastethernet 0/0.242
-encapsulation dot1Q 242
-ip address 182.168.10.126 255.255.255.192 
-no shutdown
-exit
 
  interface fastethernet 0/0.243
 encapsulation dot1Q 243
-ip address 182.168.10.190 255.255.255.192 
+ip address 182.168.7.158 255.255.255.224
+no shutdown
+exit 
+interface fastethernet 0/0.244
+encapsulation dot1Q 244
+ip address 182.168.7.190 255.255.255.224
+no shutdown
+exit
+
+ interface fastethernet 0/0.245
+encapsulation dot1Q 245
+ip address 182.168.7.222 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.246
+encapsulation dot1Q 246
+ip address 182.168.7.254 255.255.255.224  
+no shutdown
+exit
+
+ interface fastethernet 0/0.247
+encapsulation dot1Q 247
+ip address 182.168.8.30 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.248
+encapsulation dot1Q 248
+ip address 182.168.8.62 255.255.255.224  
+no shutdown
+exit
+
+
+ interface fastethernet 0/0.249
+encapsulation dot1Q 249
+ip address 182.168.8.94 255.255.255.224
+no shutdown
+exit
+ interface fastethernet 0/0.250
+encapsulation dot1Q 250
+ip address 182.168.8.126 255.255.255.224
+no shutdown
+exit
+
+
+ interface fastethernet 0/0.251
+encapsulation dot1Q 251
+ip address 182.168.8.158 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.252
+encapsulation dot1Q 252
+ip address 182.168.8.190 255.255.255.224 
+no shutdown
+exit
+
+
+ interface fastethernet 0/0.253
+encapsulation dot1Q 253
+ip address 182.168.8.222 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.254
+encapsulation dot1Q 254
+ip address 182.168.8.254 255.255.255.224
+no shutdown
+exit
+
+
+ interface fastethernet 0/0.255
+encapsulation dot1Q 255
+ip address 182.168.9.30 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.256
+encapsulation dot1Q 256
+ip address 182.168.9.62 255.255.255.224  
+no shutdown
+exit
+
+ interface fastethernet 0/0.257
+encapsulation dot1Q 257
+ip address 182.168.9.94 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.258
+encapsulation dot1Q 258
+ip address 182.168.9.126 255.255.255.224 
+no shutdown
+exit
+
+ interface fastethernet 0/0.259
+encapsulation dot1Q 259
+ip address 182.168.9.158 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.260
+encapsulation dot1Q 260
+ip address 182.168.9.190 255.255.255.224 
+no shutdown
+exit
+
+ interface fastethernet 0/0.261
+encapsulation dot1Q 261
+ip address 182.168.9.222 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.262
+encapsulation dot1Q 262
+ip address 182.168.9.254 255.255.255.224 
+no shutdown
+exit
+
+ interface fastethernet 0/0.263
+encapsulation dot1Q 263
+ip address 182.168.10.30 255.255.255.224  
+no shutdown
+exit
+ interface fastethernet 0/0.264
+encapsulation dot1Q 264
+ip address 182.168.10.62 255.255.255.224  
+no shutdown
+exit
+
+ interface fastethernet 0/0.265
+encapsulation dot1Q 265
+ip address 182.168.10.94 255.255.255.224 
+no shutdown
+exit
+ interface fastethernet 0/0.266
+encapsulation dot1Q 266
+ip address 182.168.10.126 255.255.255.224 
+no shutdown
+exit
+
+ interface fastethernet 0/0.267
+encapsulation dot1Q 267
+ip address 182.168.10.158 255.255.255.224  
+no shutdown
+exit 
+ interface fastethernet 0/0.268
+encapsulation dot1Q 268
+ip address 182.168.10.190 255.255.255.224  
 no shutdown
 exit 
 =============================
@@ -431,17 +575,17 @@ exit
 R5  
 interface fastethernet 0/0.500
 encapsulation dot1Q 500
-ip address 152.168.1.254 255.255.255.0
+ip address 152.168.0.254 255.255.255.0
 no shutdown
 exit  
 interface fastethernet 0/0.501
 encapsulation dot1Q 501
-ip address 152.168.2.254 255.255.255.0
+ip address 152.168.1.254 255.255.255.0
 no shutdown
 exit  
 interface fastethernet 0/0.502
 encapsulation dot1Q 502
-ip address 152.168.3.254 255.255.255.0
+ip address 152.168.2.254 255.255.255.0
 no shutdown
 exit 
 

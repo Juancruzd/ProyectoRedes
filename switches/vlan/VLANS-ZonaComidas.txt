@@ -1,3 +1,13 @@
+CREACIÓN DE VLANS
+*********************************************************
+vlan 500
+name vlan_zdc_establecimiento_de_comida_rapida
+vlan 501
+name vlan_zdc_1_patio_de_comidas
+vlan 502
+name vlan_zdc_2_patio_de_comidas
+
+*********************************************************
 -----------VLAN ZONA DE COMIDAS-----------
 
 --------VLAN ESTABLECIMIENTOS DE COMIDA RAPIDA --------
