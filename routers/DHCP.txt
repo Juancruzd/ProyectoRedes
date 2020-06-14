@@ -451,36 +451,36 @@ dns-server 8.8.8.8
 
 ------VLAN AGENCIAS BANCARIAS
 
-ip dhcp pool vlan 300
+ip dhcp pool vlan300
 network 172.168.0.0 255.255.255.224
 default-router 172.168.0.30	
 dns-server 8.8.8.8
 -------VLAN GERENCIA
 
-ip dhcp pool vlan 301
+ip dhcp pool vlan301
 network 172.168.0.32 255.255.255.248
 default-router 172.168.0.38
 dns-server 8.8.8.8
 --------VLAN SECRETARIA
-ip dhcp pool vlan 302
+ip dhcp pool vlan302
 network 172.168.0.40 255.255.255.248
 default-router 172.168.0.46
 dns-server 8.8.8.8
 
 -------VLAN VENTANILLAS
-ip dhcp pool vlan 303
+ip dhcp pool vlan303
 network 172.168.0.48 255.255.255.240
 default-router 172.168.0.62
 dns-server 8.8.8.8
 
 
 -------VLAN BOVEDA Y ANTE-BOVEDA
-ip dhcp pool vlan 304
+ip dhcp pool vlan304
 network 172.168.0.64 255.255.255.248
 default-router 172.168.0.70
 dns-server 8.8.8.8
 --------VLAN CAJEROS AUTOATICOS
-ip dhcp pool vlan 305
+ip dhcp pool vlan305
 network 172.168.0.72 255.255.255.248
 default-router 172.168.0.78
 dns-server 8.8.8.8
