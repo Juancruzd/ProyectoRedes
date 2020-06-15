@@ -1,0 +1,76 @@
+
+				ACL EXTENDIDAS
+ZONA ADMINISTRATIVA
+
+
+ip access-list extended Ext_ZonaAdministrativa
+permit tcp 192.168.0.0 0.0.0.127 host 192.168.0.81 eq www
+permit tcp 192.168.0.0 0.0.0.127 host 192.168.0.81 eq 443
+permit tcp 192.168.0.0 0.0.0.127 host 192.168.0.81 eq 53
+permit udp 192.168.0.0 0.0.0.127 host 192.168.0.81 eq 53 
+
+permit ip 192.168.0.64 0.0.0.7 192.168.0.80  0.0.0.7  
+permit ip 192.168.0.72 0.0.0.7 192.168.0.80  0.0.0.7
+
+permit ip 192.168.0.80  0.0.0.7 any  
+
+permit ip host 8.8.8.8 any 
+permit ip host 7.7.7.7 any 
+permit ip host 9.9.9.9 any  
+
+permit tcp  182.168.0.0 0.0.15.255 host 192.168.0.81 eq www
+permit tcp  182.168.0.0 0.0.15.255 host 192.168.0.81 eq 443
+
+permit tcp  172.168.0.0 0.0.15.255 host 192.168.0.81 eq www
+permit tcp  172.168.0.0 0.0.15.255 host 192.168.0.81 eq 443
+
+permit tcp  162.168.0.0 0.0.15.255 host 192.168.0.81 eq www
+permit tcp  162.168.0.0 0.0.15.255 host 192.168.0.81 eq 443
+
+permit tcp  152.168.0.0 0.0.15.255 host 192.168.0.81 eq www
+permit tcp  152.168.0.0 0.0.15.255 host 192.168.0.81 eq 443
+
+permit tcp  142.168.0.0 0.0.0.15 host 192.168.0.81 eq www
+permit tcp  142.168.0.0 0.0.0.15 host 192.168.0.81 eq 443
+
+permit tcp  132.168.0.0 0.0.0.15 host 192.168.0.81 eq www
+permit tcp  132.168.0.0 0.0.0.15 host 192.168.0.81 eq 443
+
+interface fast 0/0.100
+ ip access-group Ext_ZonaAdministrativa out 
+interface fast 0/0.100
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.101
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.102
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.103
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.104
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.105
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.106
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.107
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.108
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.109
+ ip access-group Ext_ZonaAdministrativa out
+interface fast 0/0.110
+ ip access-group Ext_ZonaAdministrativa out
+
+
+
+ip access-list standard SSH
+permit 192.168.0.64 0.0.0.7 
+permit 192.168.0.72 0.0.0.7
+permit 192.168.0.80 0.0.0.7
+exit
+line vty 0 15
+access-class SSH in
+
+
+
+

@@ -23,7 +23,7 @@ Detalles de subred
 SubnetID	SubnetAddress	HostAddressRange		BroadcastAddress	submask
 ***Areas que requieren acceso a internet
 
-Oficina de Gerencia	3 hosts
+*Oficina de Gerencia	3 hosts
 1(6 hosts)	192.168.0.0	192.168.0.1 - 192.168.0.6	192.168.0.7		255.255.255.248/29
 
 *Contabilidad	3 hosts
@@ -85,8 +85,7 @@ Mascara de subred
 Número de hosts/subredes	
 64
 Número de subredes
-64
-
+64 
 Detalles de subred	
 SubnetID	SubnetAddress	HostAddressRange		BroadcastAddress	submask
 ***Areas que requieren acceso a internet
