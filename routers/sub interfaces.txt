@@ -71,50 +71,42 @@ exit
 
 =============================
 R2 
-interface fastethernet 0/0.200
-encapsulation dot1Q 200
+interface fastethernet 0/0.200	encapsulation dot1Q 200
 ip address 182.168.0.126 255.255.255.128
 no shutdown
 exit
 
- interface fastethernet 0/0.201
-encapsulation dot1Q 201
+interface fastethernet 0/0.201	encapsulation dot1Q 201
 ip address 182.168.0.254 255.255.255.128
 no shutdown
 exit
 
- interface fastethernet 0/0.202
-encapsulation dot1Q 202
+ interface fastethernet 0/0.202	encapsulation dot1Q 202
 ip address 182.168.1.126 255.255.255.128 
 no shutdown
 exit
 
- interface fastethernet 0/0.203
-encapsulation dot1Q 203
+ interface fastethernet 0/0.203	encapsulation dot1Q 203
 ip address 182.168.1.254 255.255.255.128 
 no shutdown
 exit
 
- interface fastethernet 0/0.204
-encapsulation dot1Q 204
+ interface fastethernet 0/0.204	encapsulation dot1Q 204
 ip address 182.168.2.126 255.255.255.128
 no shutdown
 exit
 
- interface fastethernet 0/0.205
-encapsulation dot1Q 205
+ interface fastethernet 0/0.205	encapsulation dot1Q 205
 ip address 182.168.2.254 255.255.255.128
 no shutdown
 exit
 
- interface fastethernet 0/0.206
-encapsulation dot1Q 206
+ interface fastethernet 0/0.206	encapsulation dot1Q 206
 ip address 182.168.3.126 255.255.255.128
 no shutdown
 exit
 
- interface fastethernet 0/0.207
-encapsulation dot1Q 207
+ interface fastethernet 0/0.207	encapsulation dot1Q 207
 ip address 182.168.3.254 255.255.255.128
 no shutdown
 exit
